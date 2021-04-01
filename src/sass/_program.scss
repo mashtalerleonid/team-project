@@ -1,0 +1,9 @@
+.program {
+  counter-reset: semestr;
+}
+
+// псевдоелемент лічильник
+.program__item--first::before {
+  counter-increment: semestr;
+  content: ' ' counter(semestr);
+}
