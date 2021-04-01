@@ -55,3 +55,8 @@ img {
     max-width: $desktop;
   }
 }
+
+.thumb {
+  position: relative;
+  overflow: hidden;
+}
