@@ -1,9 +1,51 @@
 .program {
   counter-reset: semestr;
+  background-color: $dark-background-color;
 }
 
-// псевдоелемент лічильник
-.program__item--first::before {
-  counter-increment: semestr;
-  content: ' ' counter(semestr);
+.my-container {
+  outline: 1px solid tomato;
+}
+
+.program__list {
+  @extend %list;
+}
+
+.program__item--first {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 2;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $inverse-text-color;
+
+  // псевдоелемент лічильник
+  &::before {
+    counter-increment: semestr;
+    content: ' ' counter(semestr);
+  }
+}
+
+.program__item--second {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 1.67;
+  // align-items: center;
+  // letter-spacing: 0.08em;
+  text-transform: none;
+
+  color: $accent-color;
+}
+
+.program__item--third {
+  font-weight: 500;
+  // letter-spacing: 0.08em;
+  color: $secondary-text-color;
+  opacity: 0.5;
+}
+
+.program__img {
+  margin-right: -76px;
+  margin-left: auto;
+  margin-top: -40px;
 }
