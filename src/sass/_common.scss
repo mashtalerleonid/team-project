@@ -25,3 +25,19 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  max-width: $mobile;
+  min-width: $mobile-min;
+
+  @media screen and (min-width: $tablet) {
+    max-width: $tablet;
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    max-width: $desktop;
+  }
+}
