@@ -1,0 +1,33 @@
+.benefits__list {
+  @extend %list;
+  @include grid(35px);
+  counter-reset: items;
+
+  padding: 65px 113px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: $primary-text-color;
+
+  background-color: $inverse-text-color;
+  box-shadow: $box-shadow;
+}
+
+.benefits__item {
+  @include grid-item(35px, 3);
+  display: flex;
+  flex-direction: column;
+
+  &::before {
+    content: '— ' counter(items, decimal-leading-zero);
+    counter-increment: items;
+    margin-bottom: 10px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 164.9%;
+    color: $accent-color;
+  }
+}
