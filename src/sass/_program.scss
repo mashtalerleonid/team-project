@@ -4,6 +4,15 @@
   padding-top: 50px;
   padding-bottom: 50px;
   background-color: $dark-background-color;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 60px;
+    padding-bottom: 0;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding-top: 120px;
+  }
 }
 
 .my-container {
@@ -21,6 +30,22 @@
   letter-spacing: 0.03em;
 
   color: $inverse-text-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+    margin-bottom: 52px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    // margin-bottom: 100px;
+    margin-bottom: 0;
+    padding-bottom: 100px;
+    border-bottom: 1px solid $inverse-text-color;
+
+    font-size: 46px;
+    line-height: 1.3;
+    text-align: left;
+  }
 }
 
 .program__list {
@@ -32,12 +57,44 @@
   // list-style: none;
 }
 
+.program__list-title {
+  position: relative;
+  // псевдоелемент лічильник
+  &::before {
+    margin-left: 20px;
+    counter-increment: semestr;
+    content: counter(semestr) ' ';
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: -5px;
+    top: 3px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: $accent-color;
+  }
+}
+
 .program__list--first {
   margin-left: 68px;
+
+  @media screen and (min-width: $tablet) {
+    margin-left: 57px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: flex;
+    margin-left: 0;
+  }
 }
 
 .program__item--first {
   // padding-left: 20px;
+  // position: relative;
 
   font-weight: bold;
   font-size: 14px;
@@ -47,18 +104,16 @@
 
   // border-left: 1px solid tomato;
 
-  // псевдоелемент лічильник
-  &::before {
-    margin-left: 20px;
-    counter-increment: semestr;
-    content: ' ' counter(semestr);
-  }
-
   &:not(:last-child) {
     // margin-bottom: 40px;
     // padding-bottom: 40px;
     // padding-left: 20px;
     // border-left: 1px solid tomato;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 1.4;
   }
 }
 
@@ -66,12 +121,24 @@
   padding-top: 17px;
   padding-left: 20px;
   padding-bottom: 52px;
-  border-left: 1px solid tomato;
+  border-left: 1px solid $inverse-text-color;
   margin-top: -12px;
   margin-bottom: -12px;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding-left: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: block;
+    border: none;
+    padding-left: 0;
+  }
 }
 
 .program__item--second {
+  position: relative;
   font-weight: bold;
   font-size: 12px;
   line-height: 1.67;
@@ -79,8 +146,33 @@
 
   color: $accent-color;
 
+  &::before {
+    content: '';
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 4px;
+    // position: absolute;
+    // left: -5px;
+    // top: 3px;
+    width: 12px;
+    height: 1px;
+    // border-radius: 50%;
+    background-color: $accent-color;
+  }
+
   &:not(:last-child) {
     margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: $tablet) {
+    &:not(:last-child) {
+      margin-right: 50px;
+      width: 176px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
   }
 }
 
@@ -95,9 +187,13 @@
 
 .program__item--third {
   font-weight: 500;
-  // letter-spacing: 0.08em;
   color: $secondary-text-color;
   opacity: 0.5;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
 .program__img {
