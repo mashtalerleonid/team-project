@@ -1,17 +1,30 @@
 .hero {
-  @media screen and(min-width:$mobile-min) {
-    margin-top: 50px;
-    margin-bottom: 77px;
+  padding-top: 50px;
+  padding-bottom: 77px;
+  @media screen and(min-width:$desktop) {
+    padding-bottom: 107px;
   }
 }
 
-.hero-position {
+// .hero__gradient {
+//   position: absolute;
+//   width: 768px;
+//   height: 618px;
+//   left: -64px;
+//   top: -0.5px;
+
+//   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
+//   border: 1px solid #000000;
+//   box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+// }
+
+.hero__position {
   @media screen and(min-width:$tablet) {
     display: flex;
   }
 }
 
-.hero-information-container {
+.hero-information__container {
   @media screen and(min-width:$mobile-min) {
     display: flex;
     flex-direction: column;
@@ -22,7 +35,7 @@
     align-items: flex-start;
   }
 }
-.hero-title {
+.hero__title {
   margin: 0px;
   padding: 0px;
   font-style: normal;
@@ -39,7 +52,7 @@
   }
 }
 
-.hero-description {
+.hero__description {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
@@ -73,19 +86,11 @@
   }
 }
 
-// .hero-text-container {
-//   @media screen and(min-width:$desktop) {
-//     display: flex;
-//   }
-// }
-
-.hero-button {
+.hero__button {
   width: 260px;
   height: 48px;
   padding: 14px 1px;
   margin-bottom: 30px;
-  // margin-left: auto;
-  // margin-right: auto;
   color: $inverse-text-color;
   background-color: $accent-color;
   text-decoration: none;
@@ -104,7 +109,7 @@
   }
 }
 
-.hero-thumb {
+.hero__thumb {
   margin-left: auto;
   margin-right: auto;
   @media screen and(min-width:$mobile-min) {
@@ -118,9 +123,11 @@
   }
 }
 
-.hero-img {
-  width: 100%;
-  height: 100%;
-}
-
-// background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
+// .hero__img {
+//   width: 100%;
+//   height: 100%;
+//   background-image: url(../images/hero/hero-ellipse.png);
+//   background-repeat: no-repeat;
+//   background-size: contain;
+//   background-position: -50% 50%;
+// }
