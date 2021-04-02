@@ -66,5 +66,7 @@
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M16 10.875c-2.831 0-5.126 2.295-5.126 5.125s2.295 5.126 5.126 5.126c2.831 0 5.126-2.295 5.126-5.126s-2.295-5.125-5.126-5.125zM16 19.361c-1.856 0-3.361-1.505-3.361-3.361s1.505-3.361 3.361-3.361 3.361 1.505 3.361 3.361c0 1.856-1.505 3.361-3.361 3.361z"></path>
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M22.644 10.641c0 0.673-0.546 1.219-1.219 1.219s-1.219-0.546-1.219-1.219c0-0.674 0.546-1.219 1.219-1.219s1.219 0.546 1.219 1.219z"></path>
 </symbol>
+<symbol id="menu" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1h20.5M0 7h20.5M0 13h20.5" stroke="#000" stroke-width="2"/></symbol>
+<symbol id="cross" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_b)" stroke="#fff" stroke-width="2"><path d="M1 15.496L15.496 1M15.496 15.496L1 1"/></g><defs><filter id="filter0_b" x="-3.707" y="-3.707" width="23.91" height="23.91" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feGaussianBlur in="BackgroundImage" stdDeviation="2"/><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/><feBlend in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/></filter></defs></symbol>
 </defs>
 </svg>
