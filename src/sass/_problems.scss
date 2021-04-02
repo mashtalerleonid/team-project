@@ -1,21 +1,26 @@
 .problems {
   position: relative;
-  min-height: 545px;
+  min-height: 693px;
   padding: 50px 0 0 0;
   color: $inverse-text-color;
   background-image: linear-gradient(
     to bottom,
-    $dark-background-color 560px,
+    $dark-background-color 545px,
     $inverse-text-color 150px
   );
 
   @media screen and (min-width: $tablet) {
-    min-height: 490px;
+    padding-top: 60px;
+    min-height: 495px;
+    background-image: linear-gradient(
+      to bottom,
+      $dark-background-color 345px,
+      $inverse-text-color 150px
+    );
   }
 
   @media screen and (min-width: $desktop) {
     min-height: 710px;
-    padding: 100px 0 430px 0;
 
     background-image: url(../images/bg_problems.svg),
       linear-gradient(to bottom, $dark-background-color 560px, $inverse-text-color 150px);
@@ -25,14 +30,23 @@
 }
 
 .problems__thumb {
+  padding: 20px 15px 20px 30px;
+  box-shadow: $box-shadow;
+  background-color: $inverse-text-color;
+
+  @media screen and (min-width: $tablet) {
+    padding: 35px 95px;
+  }
+
   @media screen and (min-width: $desktop) {
-    max-width: $desktop;
+    padding: 65px 113px;
+    font-size: 20px;
   }
 }
 
 .problems__title {
-  margin: 0;
-  padding: 0 20px 30px 20px;
+  margin: 0 0 25px 0;
+  padding: 0;
   font-weight: 800;
   font-size: 20px;
   line-height: 130%;
@@ -43,13 +57,8 @@
     color: $accent-color;
   }
 
-  @media screen and (min-width: $tablet) {
-    max-width: 568px;
-  }
-
   @media screen and (min-width: $desktop) {
-    max-width: 866px;
-
+    margin-bottom: 70px;
     font-size: 46px;
   }
 }
@@ -58,38 +67,26 @@
   @extend %list;
   counter-reset: items;
 
-  padding: 20px 15px 20px 30px;
-
   font-weight: 700;
   font-size: 14px;
   line-height: 1.42;
   letter-spacing: 0.08em;
   color: $primary-text-color;
 
-  background-color: $inverse-text-color;
-  box-shadow: $box-shadow;
-
   @media screen and (min-width: $tablet) {
     @include grid(35px);
-    padding: 30px 98px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    position: absolute;
-    bottom: 0;
-    padding: 65px 113px;
-    font-size: 20px;
   }
 }
 
 .problems__item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 
   &::before {
     content: '— ' counter(items, decimal-leading-zero);
     counter-increment: items;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     font-weight: 700;
     font-size: 20px;
