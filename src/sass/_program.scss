@@ -3,14 +3,17 @@
 
   overflow: hidden;
   padding-top: 50px;
+  padding-bottom: 440px;
   background-color: $dark-background-color;
 
   @media screen and (min-width: $tablet) {
     padding-top: 60px;
+    padding-bottom: 253px;
   }
 
   @media screen and (min-width: $desktop) {
     padding-top: 120px;
+    padding-bottom: 60px;
   }
 }
 
@@ -184,7 +187,6 @@
       margin-bottom: 25px;
       margin-right: 0;
       width: 100%;
-      // font-size: 20px;
     }
   }
 
