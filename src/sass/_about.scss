@@ -1,0 +1,23 @@
+.about__container {
+    outline: 1px solid tomato;
+  }
+  
+  .teacher__check-mark {
+    width: 17px;
+    height: 14px;
+  }
+  
+  .teacher__skills {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .teacher__photo {
+    width: 243px;
+    height: auto;
+  
+    @media screen and (min-width: $desktop) {
+        width: 530px;
+    }
+  }
