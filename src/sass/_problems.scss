@@ -30,7 +30,7 @@
 }
 
 .problems__thumb {
-  padding: 20px 15px 20px 30px;
+  padding: 20px 30px 20px 30px;
   box-shadow: $box-shadow;
   background-color: $inverse-text-color;
 
@@ -75,6 +75,10 @@
 
   @media screen and (min-width: $tablet) {
     @include grid(35px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
   }
 }
 
