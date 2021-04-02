@@ -1,21 +1,54 @@
-.benefits__list {
-  @extend %list;
-  counter-reset: items;
+.benefits__container {
+  transform: translateY(-480px);
+  @media screen and (min-width: $tablet) {
+    transform: translateY(-150px);
+  }
+  @media screen and (min-width: $desktop) {
+    transform: translateY(-200px);
+  }
+}
 
-  padding: 20px 15px 20px 30px;
+.benefits__title {
+  max-width: 180px;
+  margin: 0 0 30px 0;
+  padding: 0;
 
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.42;
-  letter-spacing: 0.08em;
-  color: $primary-text-color;
-
-  background-color: $inverse-text-color;
-  box-shadow: $box-shadow;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 136%;
+  letter-spacing: 0.03em;
+  color: $inverse-text-color;
 
   @media screen and (min-width: $tablet) {
-    @include grid(35px);
-    padding: 30px 98px;
+    padding-top: 50px;
+    max-width: 100%;
+    text-align: center;
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+  }
+}
+
+.benefits__thumb {
+  padding: 20px 15px 20px 30px;
+
+  box-shadow: $box-shadow;
+  background-color: $inverse-text-color;
+
+  @media screen and (min-width: $tablet) {
+    padding: 35px 95px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -24,14 +57,34 @@
   }
 }
 
+.benefits__list {
+  @extend %list;
+  counter-reset: items;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.08em;
+  color: $primary-text-color;
+
+  @media screen and (min-width: $tablet) {
+    @include grid(35px);
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+  }
+}
+
 .benefits__item {
   display: flex;
   flex-direction: column;
+  margin-bottom: 10px;
 
   &::before {
     content: '— ' counter(items, decimal-leading-zero);
     counter-increment: items;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 
     font-weight: 700;
     font-size: 20px;
