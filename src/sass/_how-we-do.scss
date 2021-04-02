@@ -1,0 +1,29 @@
+.how-we-do__title {
+  font-weight: 800;
+  font-size: 46px;
+  line-height: 1/30;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
+}
+
+.how-we-do__list {
+  @extend %list;
+}
+
+.how-we-do__descrition {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: $primary-text-color;
+}
+
+.how-we-do__text {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.556;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: $secondary-text-color;
+}
