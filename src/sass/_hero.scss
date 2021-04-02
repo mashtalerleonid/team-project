@@ -1,0 +1,59 @@
+.hero {
+  margin-top: 50px;
+  margin-bottom: 77px;
+}
+.hero-title {
+  margin: 0px;
+  padding: 0px;
+  text-align: left;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+}
+
+.hero-description {
+  margin-bottom: 30px;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 22px;
+  &__text {
+    display: block;
+    font-weight: 500;
+    color: $secondary-text-color;
+  }
+
+  &__topic {
+    display: block;
+    font-weight: bold;
+    color: $dark-background-color;
+  }
+
+  &__label {
+    display: block;
+    font-weight: bold;
+    color: $accent-color;
+  }
+}
+
+.hero-button {
+  display: inline-block;
+  width: 260px;
+  height: 48px;
+  padding: 14px 1px;
+  margin-left: auto;
+  margin-right: auto;
+  color: $inverse-text-color;
+  background-color: $accent-color;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  text-transform: uppercase;
+  border: none;
+}
+
+.hero-thumb {
+}
+
+// background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
