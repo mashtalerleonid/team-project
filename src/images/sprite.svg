@@ -68,5 +68,6 @@
 </symbol>
 <symbol id="menu" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 1h20.5M0 7h20.5M0 13h20.5" stroke="#000" stroke-width="2"/></symbol>
 <symbol id="cross" fill="none" xmlns="http://www.w3.org/2000/svg"><g filter="url(#filter0_b)" stroke="#fff" stroke-width="2"><path d="M1 15.496L15.496 1M15.496 15.496L1 1"/></g><defs><filter id="filter0_b" x="-3.707" y="-3.707" width="23.91" height="23.91" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB"><feFlood flood-opacity="0" result="BackgroundImageFix"/><feGaussianBlur in="BackgroundImage" stdDeviation="2"/><feComposite in2="SourceAlpha" operator="in" result="effect1_backgroundBlur"/><feBlend in="SourceGraphic" in2="effect1_backgroundBlur" result="shape"/></filter></defs></symbol>
+<symbol id="dash" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 .4h20v1.94H0V.4z" fill="#FF6B09"/></symbol>
 </defs>
 </svg>
