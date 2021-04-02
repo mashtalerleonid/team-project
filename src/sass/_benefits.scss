@@ -1,11 +1,15 @@
-.benefits__container {
-  transform: translateY(-480px);
+.benefits {
+  position: relative;
+  margin-top: -480px;
+
   @media screen and (min-width: $tablet) {
-    transform: translateY(-150px);
+    margin-top: -200px;
   }
   @media screen and (min-width: $desktop) {
-    transform: translateY(-200px);
+    margin-top: -200px;
   }
+}
+.benefits__container {
 }
 
 .benefits__title {
@@ -20,7 +24,6 @@
   color: $inverse-text-color;
 
   @media screen and (min-width: $tablet) {
-    padding-top: 50px;
     max-width: 100%;
     text-align: center;
     font-size: 26px;
@@ -42,7 +45,7 @@
 }
 
 .benefits__thumb {
-  padding: 20px 15px 20px 30px;
+  padding: 20px 30px 20px 30px;
 
   box-shadow: $box-shadow;
   background-color: $inverse-text-color;
