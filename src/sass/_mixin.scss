@@ -1,10 +1,12 @@
 @mixin grid($margin) {
   display: flex;
   flex-wrap: wrap;
-  margin: -1 * $margin;
+  margin-left: -1 * $margin;
+  margin-top: -1 * $margin;
 }
 
 @mixin grid-item($margin, $qty) {
   flex-basis: calc(100% / #{$qty} - #{$margin});
-  margin: $margin;
+  margin-left: $margin;
+  margin-top: $margin;
 }
