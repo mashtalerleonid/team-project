@@ -1,0 +1,85 @@
+.header {
+    outline: 1px solid tomato;
+    height: 48px;
+    margin-top: 30.5px;
+    margin-bottom: 50.5px;
+  
+    @media screen and (min-width: $tablet) {
+        margin-top: 40px;
+        margin-bottom: 70px;
+    }
+  
+    @media screen and (min-width: $desktop) {
+        height: 70px;
+        margin-top: 33.5px;
+        margin-bottom: 46px;
+    }
+  }
+  
+  .header__container {
+    outline: 1px solid teal;
+    height: inherit;    
+  }
+  
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: inherit;
+  }
+  
+  .header__logo {
+    @media screen and (min-width: $tablet) {
+        margin-right: 239px;        
+    }
+  
+    @media screen and (min-width: $desktop) {
+        margin-right: 144px;        
+    }
+  }
+  
+  .header__list {
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  
+    @media screen and (max-width: 1343px) {
+        display: none;
+    }
+  }
+  
+  .header__list-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .consultation-button {
+    border: none;
+    padding: 0;    
+    display: flex;
+    
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+  
+    @media screen and (max-width: 1343px) {
+        margin-right: 40px;
+    }
+  
+  
+  
+  }
+  
+  .menu-toggle {
+    width: 20.5px;
+    height: 12px;
+    border: none;
+    padding: 0;    
+    display: flex;
+  
+    @media screen and (min-width: $desktop) {
+        display: none;
+    }
+  }
