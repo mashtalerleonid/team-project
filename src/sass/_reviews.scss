@@ -1,41 +1,140 @@
-.review__img {
+.reviews {
+  padding-top: 50px;
+}
+
+.slick-list {
+  padding: 0;
+}
+
+.reviews__title {
+  margin-bottom: 20px;
+  margin-top: 0;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: $dark-background-color;
+}
+
+.review {
+  padding: 20px 20px 30px 20px;
+  // width: 200px;
+  // height: 564px;
+  letter-spacing: 0.08em;
+}
+
+.review__thumb {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+
+.reviews__img {
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
 
-.slide-1 {
-  // width: 200px;
-  height: 564px;
-  background-color: violet;
-
-  &:not(:last-child) {
-    margin-right: 5px;
-  }
+.review__social-link {
+  @extend %link;
+  cursor: pointer;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  // align-items: center;
+  width: 30px;
+  height: 30px;
 }
+
+.reviews__icon {
+}
+
+.review__title {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 1.2;
+  text-align: center;
+
+  color: $accent-color;
+}
+
+.review__university {
+  margin-bottom: 10px;
+  margin-top: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  text-align: center;
+
+  color: $secondary-text-color;
+}
+.review__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.7;
+  text-align: center;
+
+  color: $slider-text-color;
+}
+
+.slick-center .reviews__thumb {
+  border: 2px solid orange;
+}
+
+.slider-for {
+  margin-bottom: 20px;
+  box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
+}
+
+.slider-nav {
+  margin-right: 50px;
+  margin-left: 50px;
+  // margin-left: auto;
+  // margin-right: auto;
+  // width: 80%;
+}
+
+.slide-bottom {
+}
+
 .reviews__thumb {
   overflow: hidden;
   border-radius: 50%;
   width: 54px;
   height: 54px;
-  background-color: rgb(94, 14, 241);
 
-  &:not(:last-child) {
-    margin-right: 10px;
-  }
+  margin-right: auto;
+  margin-left: auto;
+  // background-color: rgb(94, 14, 241);
+
+  // &:not(:last-child) {
+  //   margin-right: 10px;
+  // }
 }
 
 .slick-next {
+  right: -45px;
   width: 25px;
   height: 15px;
 }
 
 .slick-prev {
+  left: -45px;
   width: 25px;
   height: 15px;
 }
 
-.slick-prev:before {
+.slick-prev::before {
   content: '';
   display: block;
   width: 25px;
@@ -46,7 +145,7 @@
   background-position: center;
 }
 
-.slick-next:before {
+.slick-next::before {
   content: '';
   display: block;
   width: 25px;
@@ -59,8 +158,4 @@
 
 .slick-arrow {
   // background-color: black;
-}
-
-body {
-  background-color: green;
 }
