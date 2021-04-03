@@ -8,8 +8,9 @@
                     <svg class="header__icon" >
                         <use href="./images/sprite.svg#fire">
                         </use>                        
-                        </svg>EN <br />
-                        <span>адский английский</span>
+                    </svg>EN <br />
+                    <span class="header__logo-rus">адский <span class="header__logo-black">английский</span> 
+                    </span>
                         
                 </a>
             </div>
@@ -31,8 +32,8 @@
                 aria-controls="mobile-menu"    
                 >
                     <svg 
-                    width=20.5px 
-                    height=12px
+                    width=21px 
+                    height=14px
                     aria-label="Переключатель мобильного меню"
                     >                         
                         <use class="header__menu" href="./images/sprite.svg#menu"></use>                        
@@ -41,42 +42,44 @@
            
         </nav>
     </div>
+
+    <div class="menu-container js-menu-container" id="mobile-menu">
+
+        <div class="mobile-head">
+            <div class="header__logo">
+                <a href="./index.html" class="logo logo--inverse">Hell                    
+                    <svg class="header__icon" >
+                        <use href="./images/sprite.svg#fire">
+                        </use>                        
+                    </svg>EN <br />
+                    <span class="header__logo-rus header__logo-rus--inverse">адский <span class="header__logo-black header__logo-black--inverse">английский</span> 
+                    </span>                    
+                </a>
+            </div>
+            
+            <button class="menu-toggle js-close-menu">
+                <svg 
+                width=16px 
+                height=16px
+                aria-label="Переключатель мобильного меню"
+                >
+                    <use class="header__cross" href="./images/sprite.svg#cross"></use>
+                </svg>
+            </button>
+        </div>       
+                   
+        <div class="mobile-menu__list">
+            <ul class="mobile-menu__chapters">                    
+                <li class="header__chapters-item header__chapters-item--inverse">Программы обучения</li>
+                <li class="header__chapters-item header__chapters-item--inverse" >О нас</li>
+                <li class="header__chapters-item header__chapters-item--inverse">Варианты обучения</li>
+                <li class="header__chapters-item header__chapters-item--inverse">Контакты</li>
+            </ul>
+        </div>
+        
+        <button class="consultation-button consultation-button__mob-menu" type="submit">Консультация по телефону
+        </button>
+        
+    </div>
 </header>
 
-<!-- <div class="menu-container js-menu-container" id="mobile-menu">
-
-    <div class="header__logo">
-        <a href="./index.html" class="logo">Hell                    
-            <svg class="header__icon" width=10px height=16px>
-                <use href="./images/sprite.svg#fire" width=10px height=16px>
-                </use>                        
-                </svg>EN <br />
-                адский английский
-        </a>
-    </div>
-    
-    
-    
-    <button class="menu-toggle js-close-menu">
-        <svg 
-            width=14.5px 
-            height=14.5px
-            aria-label="Переключатель мобильного меню"
-            >
-            <use class="header__cross" href="./images/sprite.svg#cross"></use>
-        </svg>
-    </button>
-               
-    <div class="mobile-menu__list">
-        <ul class="mobile-menu__chapters">                    
-            <li class="header__chapters-item">Программы обучения</li>
-            <li class="header__chapters-item">О нас</li>
-            <li class="header__chapters-item">Варианты обучения</li>
-            <li class="header__chapters-item">Контакты</li>
-        </ul>
-    </div>
-    
-    <button class="consultation-button" type="submit">Консультация по телефону
-    </button>
-    
-</div> -->
