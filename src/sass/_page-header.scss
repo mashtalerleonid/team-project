@@ -37,7 +37,29 @@
         margin-right: 144px;        
     }
   }
+
+  .logo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    font-weight: 800;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+    color: $primary-text-color;
+    text-decoration: none;    
+  }
+
+  .header__icon {
+    width: 23px;
+    height: 30px;
+    margin-left: 4.4px;
+    margin-right: 4px;
+    fill: $accent-color;    
+  }
   
+
+
   .header__list {
     display: flex;
     justify-content:left;
