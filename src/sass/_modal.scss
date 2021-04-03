@@ -1,0 +1,180 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 94px 15px;
+  background-color: rgba(0, 0, 0, 0.2);
+  opacity: 1;
+  transition: opacity 250ms $timing-function;
+
+  overflow-y: auto;
+}
+
+.modal {
+  position: relative;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: $inverse-text-color;
+  width: 100%;
+
+  @media screen and (min-width: 480px) {
+    max-width: 450px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    z-index: 2000;
+    top: 50%;
+    left: 50%;
+    max-width: 528px;
+    transform: translate(-50%, -50%) scale(1);
+    transition: transform 250ms $timing-function;
+  }
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  min-height: 40px;
+  min-width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 250ms $timing-function;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+
+.close-btn__icon {
+  @extend %icon;
+  height: 30px;
+  width: 30px;
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.backdrop.is-hidden .modal {
+  @media screen and (min-width: 1200px) {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
+}
+
+.form-modal {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+}
+
+.form-modal__caption {
+  display: block;
+  margin-bottom: 18px;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  color: $primary-text-color;
+}
+
+.form-modal__field {
+  position: relative;
+  display: block;
+  margin-bottom: 25px;
+}
+
+.form-modal__label {
+  position: absolute;
+  top: 12px;
+  left: 20px;
+  color: $secondary-text-color;
+  // transform: translateY(-50%);
+  transition: transform 250ms $timing-function;
+}
+
+.form-modal__input {
+  width: 100%;
+  padding: 11px 20px;
+  border: 1px solid $secondary-text-color;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    outline: $accent-color;
+  }
+}
+
+.form-modal__field-textarea {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.form-modal__textarea {
+  width: 100%;
+  padding: 11px 30px;
+  border: 1px solid $secondary-text-color;
+  border-radius: 4px;
+
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    outline: none;
+  }
+}
+
+.form-modal__textarea {
+  padding-left: 20px;
+  resize: none;
+  margin-bottom: 20px;
+
+  &::placeholder {
+    color: $secondary-text-color;
+  }
+}
+
+.form-modal__field:focus-within > .form-modal__label,
+.form-modal__input:not(:placeholder-shown) + .form-modal__label,
+.form-modal__textarea:not(:placeholder-shown) + .form-modal__label {
+  transform: translateY(-30px);
+}
+
+.form-modal__btn {
+  display: inline-flex;
+  padding: 10px 32px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-decoration: none;
+  background-color: $accent-color;
+  color: $inverse-text-color;
+  border: 0;
+  border-radius: 4px;
+
+  &:hover {
+    cursor: pointer;
+  }
+  display: block;
+  padding: 10px 55px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 0 auto;
+
+  &:hover,
+  &:focus {
+    background-color: #ff5709;
+  }
+}
