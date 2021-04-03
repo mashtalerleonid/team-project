@@ -1,9 +1,9 @@
 .reviews {
   padding-top: 50px;
-}
 
-.slick-list {
-  padding: 0;
+  @media screen and (min-width: $desktop) {
+    padding-top: 130px;
+  }
 }
 
 .reviews__title {
@@ -16,13 +16,41 @@
   letter-spacing: 0.03em;
 
   color: $dark-background-color;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 46px;
+  }
+}
+
+.slider__container {
+  @media screen and (min-width: $desktop) {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1090px;
+  }
 }
 
 .review {
   padding: 20px 20px 30px 20px;
-  // width: 200px;
-  // height: 564px;
-  letter-spacing: 0.08em;
+
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    padding: 40px;
+
+    & > .review__wrapper:first-child {
+      margin-right: 46px;
+    }
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 50px 110px 50px 80px;
+  }
 }
 
 .review__thumb {
@@ -32,6 +60,11 @@
   width: 90px;
   height: 90px;
   border-radius: 50%;
+
+  @media screen and (min-width: $tablet) {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 .reviews__img {
@@ -47,7 +80,6 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 20px;
-  // align-items: center;
   width: 30px;
   height: 30px;
 }
@@ -61,9 +93,21 @@
   font-weight: 800;
   font-size: 14px;
   line-height: 1.2;
+  letter-spacing: 0.08em;
   text-align: center;
 
   color: $accent-color;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 10px;
+    font-size: 30px;
+  }
 }
 
 .review__university {
@@ -72,19 +116,38 @@
   font-weight: 500;
   font-size: 12px;
   line-height: 1.25;
+  letter-spacing: 0.08em;
   text-align: center;
 
   color: $secondary-text-color;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+  }
 }
+
 .review__text {
   margin-top: 0;
   margin-bottom: 0;
   font-weight: 500;
   font-size: 12px;
   line-height: 1.7;
+  letter-spacing: 0;
   text-align: center;
 
   color: $slider-text-color;
+
+  @media screen and (min-width: $tablet) {
+    text-align: left;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+  }
 }
 
 .slick-center .reviews__thumb {
@@ -99,63 +162,66 @@
 .slider-nav {
   margin-right: 50px;
   margin-left: 50px;
-  // margin-left: auto;
-  // margin-right: auto;
-  // width: 80%;
-}
 
-.slide-bottom {
+  @media screen and (min-width: $tablet) {
+    margin-right: 60px;
+    margin-left: 60px;
+  }
 }
 
 .reviews__thumb {
   overflow: hidden;
+  margin-right: auto;
+  margin-left: auto;
   border-radius: 50%;
   width: 54px;
   height: 54px;
-
-  margin-right: auto;
-  margin-left: auto;
-  // background-color: rgb(94, 14, 241);
-
-  // &:not(:last-child) {
-  //   margin-right: 10px;
-  // }
 }
 
 .slick-next {
   right: -45px;
   width: 25px;
   height: 15px;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 15px;
+    background-image: url('../images/arrow-right.svg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  @media screen and (min-width: $tablet) {
+    right: -13px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    right: -85px;
+  }
 }
 
 .slick-prev {
   left: -45px;
   width: 25px;
   height: 15px;
-}
 
-.slick-prev::before {
-  content: '';
-  display: block;
-  width: 25px;
-  height: 15px;
-  // background-color: grey;
-  background-image: url('../images/arrow-left.svg');
-  background-size: cover;
-  background-position: center;
-}
+  &::before {
+    content: '';
+    display: block;
+    width: 25px;
+    height: 15px;
+    background-image: url('../images/arrow-left.svg');
+    background-size: cover;
+    background-position: center;
+  }
 
-.slick-next::before {
-  content: '';
-  display: block;
-  width: 25px;
-  height: 15px;
-  // background-color: grey;
-  background-image: url('../images/arrow-right.svg');
-  background-size: cover;
-  background-position: center;
-}
+  @media screen and (min-width: $tablet) {
+    left: -13px;
+  }
 
-.slick-arrow {
-  // background-color: black;
+  @media screen and (min-width: $desktop) {
+    left: -85px;
+  }
 }
