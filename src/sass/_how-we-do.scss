@@ -1,29 +1,147 @@
+.how-we-do {
+  padding: 50px 0;
+
+  @media screen and (min-width: $desktop) {
+    padding: 130px 0;
+  }
+}
+
 .how-we-do__title {
+  margin: 0;
+  margin-bottom: 30px;
+
   font-weight: 800;
-  font-size: 46px;
-  line-height: 1/30;
+  font-size: 20px;
+  line-height: 1.3;
   letter-spacing: 0.03em;
+  text-align: center;
   color: $primary-text-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+  }
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 50px;
+    font-size: 46px;
+    line-height: 1.3;
+    text-align: left;
+  }
 }
 
 .how-we-do__list {
   @extend %list;
+
+  @media screen and (min-width: $tablet) {
+    @include grid(20px);
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.how-we-do__item {
+  height: 280px;
+  background-color: $inverse-text-color;
+  box-shadow: $box-shadow;
+  transition: $timing-function;
+  margin-bottom: 15px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @media screen and (min-width: $tablet) {
+    height: 334px;
+    margin-bottom: 0px;
+    @include grid-item(20px, 2);
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 396px;
+    @include grid-item(20px, 3);
+  }
+}
+
+.how-we-do__thumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 40px;
+    padding-bottom: 30px;
+  }
+}
+
+.how-we-do__icon {
+  align-items: center;
+  fill: $accent-color;
 }
 
 .how-we-do__descrition {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 42px;
+  padding-left: 18px;
+  padding-right: 13px;
+
   font-weight: 700;
-  font-size: 20px;
-  line-height: 1.4;
+  font-size: 14px;
+  line-height: 1.429;
   text-align: center;
   letter-spacing: 0.08em;
   color: $primary-text-color;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 52px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 32px;
+
+    font-size: 20px;
+    line-height: 1.4;
+  }
+
+  &::after {
+    content: ' ';
+    position: absolute;
+    bottom: -20px;
+    width: 33px;
+    height: 2px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    text-align: center;
+    background-color: $accent-color;
+
+    @media screen and (min-width: $tablet) {
+      bottom: -25px;
+    }
+
+    @media screen and (min-width: $desktop) {
+      bottom: -15px;
+    }
+  }
 }
 
 .how-we-do__text {
+  margin: 0;
+  padding: 0 11px;
+
   font-weight: 500;
-  font-size: 18px;
-  line-height: 1.556;
+  font-size: 12px;
+  line-height: 1.667;
   text-align: center;
   letter-spacing: 0.08em;
   color: $secondary-text-color;
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 18px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.556;
+  }
 }
