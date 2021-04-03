@@ -51,7 +51,7 @@
   position: relative;
 
   &:nth-child(2) {
-    margin-top: 20px;
+    margin-top: 30px;
   }
 }
 
@@ -81,14 +81,8 @@
   transition: transform 250ms $timing-function;
 
   .reg-form__input:focus + &,
-  .reg-form__input:hover + & {
-    transform: translateY(-200%);
-  }
-}
-
-.reg-form__title--down {
-  .reg-form__input:focus + &,
-  .reg-form__input:hover + & {
-    transform: translateY(200%);
+  .reg-form__input:hover + &,
+  .reg-form__input:not(:placeholder-shown) + & {
+    transform: translateY(-230%);
   }
 }
