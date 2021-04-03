@@ -10,12 +10,12 @@
         <form class="reg-form" name="registration-form" autocomplete="on">
             
             <label class="reg-form__label">
-                <input class="reg-form__input" type="text" name="name" placeholder=" ">
+                <input class="reg-form__input" type="text" name="name" placeholder=" " minlength="3">
                 <span class="reg-form__title">Имя*</span>
             </label>
 
             <label class="reg-form__label">
-                <input class="reg-form__input" type="tel" name="tel" placeholder=" "> 
+                <input class="reg-form__input" type="tel" name="tel" placeholder=" " pattern="[0-9]{9,12}"> 
                 <span class="reg-form__title">Телефон*</span>
             </label>
 
