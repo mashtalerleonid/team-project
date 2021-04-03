@@ -1,0 +1,183 @@
+.teacher {
+    @media screen and (min-width: $tablet) {
+        display: flex;
+        align-items: flex-start;
+    }    
+}
+
+.about__container {
+    margin-top: 35px;
+  }
+
+.about__title {
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-family: Montserrat;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 130%;       
+    letter-spacing: 0.03em;    
+    color: $primary-text-color;
+
+    @media screen and (min-width: $tablet) {
+        font-size: 26px;        
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 46px;
+    }
+}
+
+.teacher__text-block {
+    max-width: 415px;
+
+    @media screen and (min-width: $tablet) {
+        margin-left: 30px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        max-width: 668px;
+    }
+}
+
+.teacher__check-mark {
+    width: 17.08px;
+    height: 14px;
+
+    @media screen and (min-width: $desktop) {
+        width: 24.41px;
+        height: 20px;
+    }
+  }
+  
+.teacher__skills {
+    margin: 0;
+    padding: 0;
+    // list-style: none;
+
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.06em;
+    color: $primary-text-color;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 16px;
+        line-height: 20px;        
+    }   
+  }
+
+.teacher__skills-item {
+    display: inline-flex;
+    margin-bottom: 17px;
+    
+    @media screen and (min-width: $tablet) {
+        margin-bottom: 30px;
+    }
+}
+
+.teacher__skills-item-text {
+    display: block;
+    margin-left: 8.92px;
+
+    @media screen and (min-width: $tablet) {
+        width: 375px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        width: 530px;
+        margin-left: 34.59px;
+    }
+}
+
+.teacher__card-thumb {
+    width: 243px;
+    height: 305.85px;
+  
+    @media screen and (min-width: $desktop) {
+        width: 530px;
+        height: 667px;
+    }
+  }
+
+.teacher__photo {
+    width: inherit;
+}
+
+.teacher__name {
+    margin-top: 20px; 
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.08em;
+    color: $primary-text-color;
+
+    &::after {
+        content: '';
+        display: block;
+        max-width: 401px;
+        height: 1px;
+        margin-top: 10px;
+        background-color: $secondary-text-color;
+
+        @media screen and (min-width: $tablet) {
+            width: 401px;
+        }
+        
+        @media screen and (min-width: $desktop) {
+            width: 640px;
+        }
+    }
+
+    @media screen and (min-width: $tablet) {
+        margin-top: 0px;
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 30px;
+        line-height: 37px;
+    }
+}
+
+.teacher__info {
+    margin-top: 0px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    color: $secondary-text-color;
+
+    &--pseudo::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        margin-bottom: 19px;
+        background-color: $accent-color;
+    }
+
+    &:not(:last-child) {
+        margin-bottom: 17px;
+
+        @media screen and (min-width: $desktop) {
+            margin-bottom: 23px;
+        }
+    }
+
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+        line-height: 28px;
+    }
+}
+
+.certificate {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    text-decoration-line: underline;
+    color: $accent-color;
+
+    @media screen and (min-width: $desktop) {
+        font-size: 18px;
+        line-height: 28px;
+    }    
+}

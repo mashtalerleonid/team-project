@@ -1,0 +1,88 @@
+.contacts__title {
+  margin: 0px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 136%;
+  text-align: center;
+  color: $inverse-text-color;
+}
+
+.contacts__title--accent,
+.contacts__text--accent {
+  color: $accent-color;
+}
+
+.contacts {
+  background-color: black;
+  padding: 50px 0px;
+}
+
+.contacts__text {
+  margin: 0px;
+  margin-top: 30px;
+  color: $inverse-text-color;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.08em;
+}
+
+.reg-form {
+  margin-top: 30px;
+}
+
+.reg-form__input {
+  color: $inverse-text-color;
+  background-color: black;
+  height: 48px;
+  width: 100%;
+  padding: 0px;
+  padding-left: 28px;
+  border: 1px solid $inverse-text-color;
+}
+
+.reg-form__label {
+  color: $inverse-text-color;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  display: block;
+  position: relative;
+
+  &:nth-child(2) {
+    margin-top: 30px;
+  }
+}
+
+.reg-form__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 260px;
+  height: 48px;
+  margin-top: 50px;
+  border: none;
+  padding: 0px;
+  background-color: $accent-color;
+  color: $inverse-text-color;
+
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.reg-form__title {
+  position: absolute;
+  left: 28px;
+  top: 15px;
+  transform: translateY(0%);
+  transition: transform 250ms $timing-function;
+
+  .reg-form__input:focus + &,
+  .reg-form__input:hover + &,
+  .reg-form__input:not(:placeholder-shown) + & {
+    transform: translateY(-230%);
+  }
+}
