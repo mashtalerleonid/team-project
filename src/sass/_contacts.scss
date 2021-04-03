@@ -80,20 +80,14 @@
   transform: translateY(0%);
   transition: transform 250ms $timing-function;
 
-  .reg-form__input:focus + & {
-    transform: translateY(-200%);
-  }
-
+  .reg-form__input:focus + &,
   .reg-form__input:hover + & {
     transform: translateY(-200%);
   }
 }
 
 .reg-form__title--down {
-  .reg-form__input:focus + & {
-    transform: translateY(200%);
-  }
-
+  .reg-form__input:focus + &,
   .reg-form__input:hover + & {
     transform: translateY(200%);
   }
