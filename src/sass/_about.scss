@@ -41,8 +41,8 @@
 }
 
 .teacher__check-mark {
-    width: 17.08px;
-    height: 14px;
+    max-width: 17.08px;
+    max-height: 14px;
 
     @media screen and (min-width: $desktop) {
         width: 24.41px;
