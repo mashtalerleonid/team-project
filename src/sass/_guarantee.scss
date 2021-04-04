@@ -23,8 +23,30 @@
 
 .guarantee__wrapper {
   width: 100%;
-  background-color: $background-color;
-  padding: 20px 0;
+  padding: 30px 0;
+
+  @media screen and (max-width: $mobile) {
+    background-color: $background-color;
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding: 0 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 183px;
+  }
+}
+
+.guarantee--container {
+  @media screen and (min-width: $tablet) {
+    background-color: $background-color;
+    padding: 0;
+  }
+}
+
+.guarantee__list {
+  @extend %list;
 
   @media screen and (min-width: $tablet) {
     padding: 30px 0px;
@@ -37,10 +59,6 @@
     padding-top: 50px;
     padding-bottom: 45px;
   }
-}
-
-.guarantee__list {
-  @extend %list;
 }
 
 .guarantee__item {
