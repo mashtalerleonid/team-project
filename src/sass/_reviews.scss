@@ -55,17 +55,26 @@
   }
 }
 
-.review__thumb {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-  width: 90px;
-  height: 90px;
+.reviews__thumb {
+  overflow: hidden;
   border-radius: 50%;
+  margin-right: auto;
+  margin-left: auto;
 
-  @media screen and (min-width: $tablet) {
-    width: 150px;
-    height: 150px;
+  &--slide-for {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: $tablet) {
+      width: 150px;
+      height: 150px;
+    }
+  }
+
+  &--slide-nav {
+    width: 54px;
+    height: 54px;
   }
 }
 
@@ -86,9 +95,6 @@
   height: 30px;
 }
 
-.reviews__icon {
-}
-
 .review__title {
   margin-bottom: 10px;
   margin-top: 0;
@@ -97,7 +103,6 @@
   line-height: 1.2;
   letter-spacing: 0.08em;
   text-align: center;
-
   color: $accent-color;
 
   @media screen and (min-width: $tablet) {
@@ -120,7 +125,6 @@
   line-height: 1.25;
   letter-spacing: 0.08em;
   text-align: center;
-
   color: $secondary-text-color;
 
   @media screen and (min-width: $tablet) {
@@ -140,7 +144,6 @@
   line-height: 1.7;
   letter-spacing: 0;
   text-align: center;
-
   color: $slider-text-color;
 
   @media screen and (min-width: $tablet) {
@@ -153,7 +156,7 @@
 }
 
 .slick-center .reviews__thumb {
-  border: 2px solid orange;
+  border: 2px solid $accent-color;
 }
 
 .slider-for {
@@ -169,15 +172,6 @@
     margin-right: 60px;
     margin-left: 60px;
   }
-}
-
-.reviews__thumb {
-  overflow: hidden;
-  margin-right: auto;
-  margin-left: auto;
-  border-radius: 50%;
-  width: 54px;
-  height: 54px;
 }
 
 .slick-next {
@@ -227,7 +221,7 @@
     left: -85px;
   }
 }
-// ------------------------------
+// Читать дальше
 .review__checkbox {
   display: none;
 }
@@ -237,7 +231,7 @@
   max-height: 0;
   transform: scale(0.5);
   font-size: 0;
-  transition: 0.25s $timing-function;
+  transition: 250ms $timing-function;
 }
 
 .review__checkbox:checked {
@@ -278,7 +272,6 @@
 
   @media screen and (min-width: $tablet) {
     display: inline;
-    // justify-content: flex-end;
   }
 
   @media screen and (min-width: $desktop) {
