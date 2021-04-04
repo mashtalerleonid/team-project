@@ -39,11 +39,13 @@
 }
 
 .how-we-do__item {
+  margin-bottom: 15px;
+
   height: 280px;
   background-color: $inverse-text-color;
   box-shadow: $box-shadow;
-  transition: $timing-function;
-  margin-bottom: 15px;
+  cursor: pointer;
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -58,6 +60,8 @@
     height: 396px;
     @include grid-item(20px, 3);
   }
+
+  transition: transform 250ms $timing-function;
 
   &:hover,
   &:focus {
@@ -101,6 +105,7 @@
 .how-we-do__icon {
   align-items: center;
   fill: $accent-color;
+  transition: transform 250ms $timing-function;
 }
 
 .how-we-do__descrition {
@@ -116,6 +121,8 @@
   text-align: center;
   letter-spacing: 0.08em;
   color: $primary-text-color;
+
+  transition: transform 250ms $timing-function;
 
   @media screen and (min-width: $tablet) {
     margin-bottom: 52px;
@@ -140,6 +147,8 @@
     text-align: center;
     background-color: $accent-color;
 
+    transition: transform 250ms $timing-function;
+
     @media screen and (min-width: $tablet) {
       bottom: -25px;
     }
@@ -160,6 +169,8 @@
   text-align: center;
   letter-spacing: 0.08em;
   color: $secondary-text-color;
+
+  transition: transform 250ms $timing-function;
 
   @media screen and (min-width: $tablet) {
     padding: 0 18px;
