@@ -23,15 +23,47 @@
 }
 
 .contacts {
-  background-color: black;
+  background-image: url('../images/contacts/contacts320.png'),
+    linear-gradient(to right, rgba(17, 21, 24, 1), rgba(17, 21, 24, 1));
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 50px 0px;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/contacts/contacts320@2x.png'),
+      linear-gradient(to right, rgba(17, 21, 24, 1), rgba(17, 21, 24, 1));
+  }
 
   @media (min-width: $tablet) {
     padding-bottom: 71px;
+    background-image: url('../images/contacts/contacts768.png'),
+      linear-gradient(to right, rgba(17, 21, 24, 1), rgba(17, 21, 24, 1));
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/contacts/contacts768@2x.png'),
+      linear-gradient(to right, rgba(17, 21, 24, 1), rgba(17, 21, 24, 1));
   }
 
   @media (min-width: $desktop) {
     padding: 100px 0px 62px 0px;
+    background-image: url('../images/contacts/contacts1680.png'),
+      linear-gradient(to right, rgba(17, 21, 24, 1), rgba(17, 21, 24, 1));
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/contacts/contacts1680@2x.png'),
+      linear-gradient(to right, rgba(17, 21, 24, 1), rgba(17, 21, 24, 1));
   }
 }
 
@@ -99,7 +131,7 @@
 
 .reg-form__input {
   color: $inverse-text-color;
-  background-color: black;
+  background-color: inherit;
   width: 100%;
   height: 100%;
   padding: 0px;
@@ -108,6 +140,7 @@
   &:invalid {
     border-color: red;
   }
+  outline: none;
 }
 
 .reg-form__button {
@@ -126,6 +159,7 @@
   font-size: 12px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
+  outline-color: $inverse-text-color;
 
   @media (min-width: $desktop) {
     width: 354px;
