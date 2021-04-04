@@ -1,28 +1,42 @@
 .hero {
+  background-color: red;
   padding-top: 50px;
   padding-bottom: 77px;
+
+  @media screen and(min-width:$mobile-min) {
+    background-image: url(../images/hero/gradient-table.png);
+    background-repeat: no-repeat;
+    // backdrop-filter: blur(4px);
+  }
+
+  // @media screen and(min-width:$tablet) {
+  //   backdrop-filter: blur(4px);
+  // }
+
   @media screen and(min-width:$desktop) {
     padding-bottom: 107px;
+    background-image: url(../images/hero/gradient.png);
+    // background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
+    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
   }
 }
-
-// .hero__gradient {
-//   position: absolute;
-//   width: 768px;
-//   height: 618px;
-//   left: -64px;
-//   top: -0.5px;
-
-//   background: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
-//   border: 1px solid #000000;
-//   box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-// }
 
 .hero__position {
   @media screen and(min-width:$tablet) {
     display: flex;
   }
 }
+
+// .hero__gradient {
+//   position: relative;
+
+//   &--img {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     z-index: 1;
+//   }
+// }
 
 .hero__container {
   @media screen and(min-width:$mobile-min) {
