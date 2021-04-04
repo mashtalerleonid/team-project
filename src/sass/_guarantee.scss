@@ -25,7 +25,6 @@
   width: 100%;
   background-color: $background-color;
   padding: 20px 0;
-  // padding-left: 30px;
 
   @media screen and (min-width: $tablet) {
     padding: 30px 0px;
@@ -51,7 +50,6 @@
   line-height: 1.667;
   color: $slider-text-color;
   padding-left: 28px;
-  // border-left: 1px dashed $accent-color;
 
   &:not(:last-child) {
     padding-bottom: 23px;
