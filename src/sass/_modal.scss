@@ -19,11 +19,11 @@
   background-color: $inverse-text-color;
   width: 100%;
 
-  @media screen and (min-width: 480px) {
+  @media screen and (min-width: $mobile) {
     max-width: 450px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     position: absolute;
     z-index: 2000;
     top: 50%;
@@ -68,7 +68,7 @@
 }
 
 .backdrop.is-hidden .modal {
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: $desktop) {
     transform: translate(-50%, -50%) scale(1.1);
   }
 }
@@ -96,23 +96,30 @@
 
 .form-modal__label {
   position: absolute;
-  top: 12px;
-  left: 20px;
+  top: 18px;
+  left: 25px;
   color: $secondary-text-color;
-  // transform: translateY(-50%);
   transition: transform 250ms $timing-function;
+
+  @media screen and (min-width: $desktop) {
+    left: 40px;
+  }
 }
 
 .form-modal__input {
   width: 100%;
-  padding: 11px 20px;
+  height: 50px;
+  padding: 10px 25px;
   border: 1px solid $secondary-text-color;
-  border-radius: 4px;
 
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
     outline: $accent-color;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 10px 40px;
   }
 }
 
@@ -126,12 +133,15 @@
   width: 100%;
   padding: 11px 30px;
   border: 1px solid $secondary-text-color;
-  border-radius: 4px;
 
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
     outline: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 10px 40px;
   }
 }
 
@@ -148,7 +158,7 @@
 .form-modal__field:focus-within > .form-modal__label,
 .form-modal__input:not(:placeholder-shown) + .form-modal__label,
 .form-modal__textarea:not(:placeholder-shown) + .form-modal__label {
-  transform: translateY(-30px);
+  transform: translateY(-37px);
 }
 
 .form-modal__btn {
@@ -163,14 +173,12 @@
   background-color: $accent-color;
   color: $inverse-text-color;
   border: 0;
-  border-radius: 4px;
 
   &:hover {
     cursor: pointer;
   }
   display: block;
   padding: 10px 55px;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
 
   &:hover,
