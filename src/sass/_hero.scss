@@ -58,7 +58,7 @@
   }
 }
 
-.hero__description {
+.hero__desc {
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
@@ -76,17 +76,17 @@
     font-size: 20px;
   }
 
-  &__text {
+  &--text {
     font-weight: 500;
     color: $secondary-text-color;
   }
 
-  &__topic {
+  &--topic {
     font-weight: bold;
     color: $dark-background-color;
   }
 
-  &__label {
+  &--label {
     font-weight: bold;
     color: $accent-color;
   }
