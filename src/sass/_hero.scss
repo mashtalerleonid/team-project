@@ -1,32 +1,37 @@
 .hero {
   padding-top: 50px;
+}
+
+.hero__shadow {
   padding-bottom: 77px;
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: left 0px bottom 0px;
+  background-image: url(../images/hero/gradient-table.png);
 
-  @media screen and(min-width:$mobile-min) {
-    background-position: left -100px;
-    background-image: url(../images/hero/gradient-mobile.png),
-      linear-gradient((180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff);
-    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
-  }
-
-  @media screen and(min-width:$mobile) {
-    background-position: right 0px bottom 0px;
-    background-image: url(../images/hero/gradient-table.png);
+  @media screen and(min-width:$tablet) {
+    background-position: left 0px bottom 0px;
+    background-image: url(../images/hero/gradient.png);
   }
 
   @media screen and(min-width:$desktop) {
     padding-bottom: 107px;
-    background-position: right 0px bottom 0px;
-    background-image: url(../images/hero/gradient.png);
-    box-shadow: -5px 21px 26px rgba(0, 0, 0, 0.04);
+  }
+}
+
+.hero .container {
+  @media screen and(min-width:$tablet) {
+    padding: 0px 18px 0px 40px;
   }
 }
 
 .hero__position {
+  position: relative;
   @media screen and(min-width:$tablet) {
     display: flex;
+  }
+  @media screen and(min-width:$desktop) {
+    padding-bottom: 115px;
   }
 }
 
@@ -49,10 +54,12 @@
   font-size: 20px;
   margin-bottom: 30px;
   @media screen and(min-width:$tablet) {
+    max-width: 332px;
     font-size: 26px;
   }
 
   @media screen and(min-width:$desktop) {
+    max-width: 642px;
     font-size: 58px;
     margin-bottom: 24px;
   }
@@ -100,6 +107,7 @@
   color: $inverse-text-color;
   background-color: $accent-color;
   text-decoration: none;
+  text-align: center;
   font-style: normal;
   font-weight: bold;
   font-size: 12px;
@@ -114,70 +122,73 @@
     margin-bottom: 0px;
     font-size: 14px;
   }
-}
-
-.hero img {
-  max-width: none;
+  &:hover,
+  :focus {
+    border: 2px solid $accent-color;
+    background-color: #fff;
+    color: $accent-color;
+  }
 }
 
 .hero__thumb {
-  position: relative;
   width: 210px;
   height: 178px;
   margin-left: auto;
   margin-right: auto;
   @media screen and(min-width:$tablet) {
+    position: absolute;
+    top: 0px;
+    right: 40px;
     width: 376px;
     height: 320px;
   }
 
   @media screen and(min-width:$desktop) {
-    width: 900px;
-    height: 800px;
+    width: 670px;
+    height: 572px;
   }
 }
 
 .hero__img {
   position: absolute;
-  width: 177.75px;
-  height: 177.5px;
+  width: 178px;
   top: 0px;
-  left: 25px;
+  left: 20px;
 
   &--opacity {
     position: absolute;
     width: 208px;
-    height: 148.85px;
     top: 10px;
-    left: 5px;
+    left: 0px;
   }
 
   @media screen and(min-width:$tablet) {
-    width: 321.11px;
-    height: 320.64px;
-    top: 0;
-    left: 0;
+    width: 321px;
+    height: 320px;
+    top: 0px;
+    right: 19px;
+    left: auto;
 
     &--opacity {
-      position: absolute;
-      width: 375.75px;
-      height: 268.9px;
-      top: 18px;
-      left: -36px;
+      width: 376px;
+      height: 269px;
+      top: 17px;
+      right: 0px;
+      left: auto;
     }
   }
 
   @media screen and(min-width:$desktop) {
-    width: 719.17px;
-    height: 718.14px;
-    top: 0;
-    left: 0;
+    width: 573px;
+    height: 572px;
+    top: 0px;
+    right: 33px;
     &--opacity {
-      position: absolute;
-      width: 841.55px;
-      height: 602.24px;
-      top: 40px;
-      left: -80px;
+      width: 670px;
+      height: 480px;
+      top: 30px;
+      right: 0px;
+      left: auto;
     }
   }
 }
