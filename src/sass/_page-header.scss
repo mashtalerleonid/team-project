@@ -1,5 +1,4 @@
 .header {
-    // outline: 1px solid tomato;
     height: 30px;
     margin-top: 30.5px;
     margin-bottom: 50.5px;
@@ -94,8 +93,6 @@
     color: $primary-text-color;
   }
   
-
-
   .header__list {
     display: flex;
     justify-content:left;
@@ -106,14 +103,24 @@
     font-weight: bold;
     font-size: 14px;
     line-height: 17px;
-    text-transform: uppercase;
-    color: $secondary-text-color;
+    text-transform: uppercase;      
   
     @media screen and (max-width: 1343px) {
         display: none;
     }
-  }
+  }  
+
   
+  .header__link {
+    text-decoration: none;
+    color: $secondary-text-color;
+    
+    &:hover,
+    &:focus {
+      color: $accent-color;      
+    }
+  }
+
   .header__list-item:not(:last-child) {
     margin-right: 40px;
   }
@@ -131,7 +138,14 @@
     text-align: center;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: $accent-color;        
+    color: $accent-color;
+    cursor: pointer;
+    
+    &:hover,
+    &:focus {
+      background-color: $accent-color;
+      color: $inverse-text-color;
+    }
     
     @media screen and (max-width: 767px) {
         display: none;
@@ -190,7 +204,7 @@
     }
 
     @media screen and (min-width: $desktop) {
-      display: none;;
+      display: none;
     }
   }
 
