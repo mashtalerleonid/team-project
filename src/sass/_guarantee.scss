@@ -21,6 +21,25 @@
   }
 }
 
+.guarantee__wrapper {
+  width: 100%;
+  background-color: $background-color;
+  padding: 20px 0;
+  // padding-left: 30px;
+
+  @media screen and (min-width: $tablet) {
+    padding: 30px 0px;
+    padding-left: 69px;
+    padding-right: 30px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    padding: 0 112px;
+    padding-top: 50px;
+    padding-bottom: 45px;
+  }
+}
+
 .guarantee__list {
   @extend %list;
 }
@@ -31,20 +50,28 @@
   font-size: 12px;
   line-height: 1.667;
   color: $slider-text-color;
+  padding-left: 28px;
+  // border-left: 1px dashed $accent-color;
 
   &:not(:last-child) {
-    margin-bottom: 23px;
+    padding-bottom: 23px;
+    border-left: 1px dashed $accent-color;
   }
 
   &:not(:last-child) {
     @media screen and (min-width: $tablet) {
-      margin-bottom: 20px;
+      padding-bottom: 20px;
     }
+  }
+
+  @media screen and (min-width: $tablet) {
+    padding-left: 32px;
   }
 
   @media screen and (min-width: $desktop) {
     font-size: 20px;
     line-height: 1.4;
+    padding-left: 41px;
   }
 }
 
@@ -53,35 +80,16 @@
   fill: $accent-color;
   width: 14.67px;
   height: 20px;
-  left: -28px;
+  left: -7px;
 
   @media screen and (min-width: $desktop) {
     width: 22px;
     height: 30px;
-    left: -58px;
+    left: -10px;
   }
 }
 
 .guarantee__style {
   color: $accent-color;
   border: none;
-}
-
-.guarantee__wrapper {
-  width: 100%;
-  background-color: $background-color;
-  padding: 20px 0;
-  padding-left: 30px;
-
-  @media screen and (min-width: $tablet) {
-    padding: 30px 0px;
-    padding-left: 79px;
-    padding-right: 50px;
-  }
-
-  @media screen and (min-width: $desktop) {
-    padding: 0 112px;
-    padding-top: 50px;
-    padding-bottom: 45px;
-  }
 }
