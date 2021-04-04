@@ -58,6 +58,31 @@
     height: 396px;
     @include grid-item(20px, 3);
   }
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+  }
+
+  &:hover .how-we-do__icon,
+  &:focus .how-we-do__icon {
+    fill: $inverse-text-color;
+  }
+
+  &:hover .how-we-do__descrition,
+  &:focus .how-we-do__descrition {
+    color: $inverse-text-color;
+  }
+
+  &:hover .how-we-do__descrition::after,
+  &:focus .how-we-do__descrition::after {
+    background-color: $inverse-text-color;
+  }
+
+  &:hover .how-we-do__text,
+  &:focus .how-we-do__text {
+    color: $inverse-text-color;
+  }
 }
 
 .how-we-do__thumb {
