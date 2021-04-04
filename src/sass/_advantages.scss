@@ -1,0 +1,77 @@
+.advantages {
+  padding-bottom: 50px;
+  background-color: linear-gradient(180deg, #ffffff 0%, rgba(255, 255, 255, 0) 100%), #ffffff;
+  @media screen and(min-width:$desktop) {
+    padding-bottom: 130px;
+  }
+}
+.advantages__list {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media screen and(min-width:$tablet) {
+    flex-direction: row;
+    margin: -20px;
+  }
+
+  @media screen and(min-width:$desktop) {
+    margin: 0px;
+  }
+}
+
+.advantages__item {
+  @media screen and(min-width:$mobile-min) {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+
+  .advantages__item:last-child {
+    @media screen and(min-width:$mobile-min) {
+      margin-bottom: 0px;
+    }
+  }
+
+  @media screen and(min-width:$tablet) {
+    flex-direction: row;
+    margin: 20px;
+  }
+
+  @media screen and(min-width:$desktop) {
+    margin: 0px;
+  }
+}
+
+.advantages__icon {
+  width: 59px;
+  height: 60px;
+  margin-right: 10px;
+
+  @media screen and(min-width:$desktop) {
+    width: 100px;
+    height: 102px;
+    margin-right: 0px;
+  }
+}
+
+.advantages__text {
+  max-width: 145px;
+  margin: 0px;
+  padding: 0px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: $dark-background-color;
+
+  @media screen and(min-width:$desktop) {
+    max-width: 366px;
+    margin-left: -15px;
+    margin-right: 0px;
+    font-size: 20px;
+  }
+}
