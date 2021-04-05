@@ -1,0 +1,31 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="close-btn" aria-label="Закрыть" data-modal-close>
+      <svg class="close-btn__icon">
+        <use href="./images/sprite.svg#close"></use>
+      </svg>
+    </button>
+    <form class="form-modal">
+      <b class="form-modal__caption">Оставьте свои данные, мы вам перезвоним</b>
+      <label class="form-modal__field" for="user-name">
+        <input class="form-modal__input" type="text" name="name" id="user-name" placeholder=" " />
+        <span class="form-modal__label">Имя</span>
+      </label>
+      <label class="form-modal__field" for="user-tel">
+        <input class="form-modal__input" type="tel" name="tel" id="user-tel" placeholder=" " />
+        <span class="form-modal__label">Телефон</span></label
+      >
+      <label class="form-modal__field" for="user-comment">
+        <textarea
+          class="form-modal__textarea"
+          name="comment"
+          id="user-comment"
+          rows="8"
+          placeholder=" "
+        ></textarea>
+        <span class="form-modal__label">Комментарий</span></label
+      >
+      <button type="submit" class="form-modal__btn">Отправить</button>
+    </form>
+  </div>
+</div>

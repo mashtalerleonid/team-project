@@ -1,0 +1,284 @@
+.header {
+  height: 30px;
+  margin-top: 30.5px;
+  margin-bottom: 50.5px;
+
+  @media screen and (min-width: $tablet) {
+    height: 48px;
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    height: 70px;
+    margin-top: 33.5px;
+    margin-bottom: 46px;
+  }
+}
+
+.header__container {
+  height: inherit;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: inherit;
+}
+
+.header__logo {
+  border: none;
+
+  @media screen and (min-width: $tablet) {
+    margin-right: 239px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    margin-right: 144px;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 80px;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.04em;
+  color: $primary-text-color;
+  text-decoration: none;
+
+  @media screen and (min-width: $tablet) {
+    width: 130px;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+  }
+}
+
+.header__icon {
+  width: 14px;
+  height: 20px;
+  margin-left: 2px;
+  margin-right: 3px;
+  fill: $accent-color;
+
+  @media screen and (min-width: $tablet) {
+    width: 23px;
+    height: 30px;
+    margin-left: 3px;
+    margin-right: 3px;
+  }
+}
+
+.header__logo-rus {
+  display: block;
+  font-weight: bold;
+  font-size: 5px;
+  line-height: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: $primary-text-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 8px;
+    color: $accent-color;
+  }
+}
+
+.header__logo-black {
+  color: $primary-text-color;
+}
+
+.header__list {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1343px) {
+    display: none;
+  }
+}
+
+.header__link {
+  text-decoration: none;
+  color: $secondary-text-color;
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+}
+
+.header__list-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.consultation-button {
+  height: 48px;
+  border: 2px solid $accent-color;
+  background-color: transparent;
+  padding: 0px 11px;
+  display: flex;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 15px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: $accent-color;
+  cursor: pointer;
+  transition: color 250ms $timing-function, background-color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $inverse-text-color;
+  }
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.14em;
+    height: 70px;
+    padding: 0px 14px;
+  }
+}
+
+.menu-toggle {
+  margin-left: 40px;
+  border: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  background-color: transparent;
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+// Мобильное меню
+
+.mobile-head {
+  height: 30px;
+  padding-right: 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: $modal-background-color;
+  z-index: 999;
+
+  transform: translateY(-100%);
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 48px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    display: none;
+  }
+}
+
+.menu-container.is-open {
+  transform: translateY(0);
+}
+
+.logo--inverse,
+.header__logo-black--inverse,
+.header__logo-rus--inverse,
+.header__chapters-item--inverse {
+  color: $inverse-text-color;
+}
+
+.mobile-menu__list {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: left;
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 72px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.mobile-menu__chapters {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 180%;
+  letter-spacing: 0.03em;
+  color: $inverse-text-color;
+
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+  }
+}
+
+.header__chapters-item--inverse:not(:last-child) {
+  margin-bottom: 7px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 10px;
+  }
+}
+
+.consultation-button__mob-menu {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+}
+
+.header__icon-cross {
+  display: none;
+}
+
+.menu-toggle.is-open .header__icon-menu {
+  display: none;
+}
+
+.menu-toggle.is-open .header__icon-cross {
+  display: block;
+}
+
+.menu-toggle.is-open {
+  z-index: 2000;
+}

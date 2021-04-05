@@ -1,0 +1,208 @@
+.contacts__title {
+  margin: 0px;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 136%;
+  text-align: center;
+  color: $inverse-text-color;
+
+  @media (min-width: $tablet) {
+    font-size: 26px;
+    line-height: 130%;
+    letter-spacing: 0.03em;
+  }
+
+  @media (min-width: $desktop) {
+    font-size: 46px;
+  }
+}
+
+.contacts__title--accent,
+.contacts__text--accent {
+  color: $accent-color;
+}
+
+.contacts {
+  background-image: url('../images/contacts/contacts320.png'),
+    linear-gradient(to right, rgba(17, 21, 24, 1), rgba(17, 21, 24, 1));
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 50px 0px;
+  max-width: 1680px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/contacts/contacts320@2x.png'),
+      linear-gradient(to right, rgba(17, 21, 24, 1), rgba(17, 21, 24, 1));
+  }
+
+  @media (min-width: $tablet) {
+    padding-bottom: 71px;
+    background-image: url('../images/contacts/contacts768.png'),
+      linear-gradient(to right, rgba(17, 21, 24, 1), rgba(17, 21, 24, 1));
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/contacts/contacts768@2x.png'),
+      linear-gradient(to right, rgba(17, 21, 24, 1), rgba(17, 21, 24, 1));
+  }
+
+  @media (min-width: $desktop) {
+    padding: 100px 0px 62px 0px;
+    background-image: url('../images/contacts/contacts1680.png'),
+      linear-gradient(to right, rgba(17, 21, 24, 1), rgba(17, 21, 24, 1));
+  }
+  @media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url('../images/contacts/contacts1680@2x.png'),
+      linear-gradient(to right, rgba(17, 21, 24, 1), rgba(17, 21, 24, 1));
+  }
+}
+
+.contacts__text {
+  margin: 0px;
+  margin-top: 30px;
+  color: $inverse-text-color;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: 0.08em;
+
+  @media (min-width: $desktop) {
+    margin-top: 50px;
+    font-size: 30px;
+    line-height: 37px;
+  }
+}
+
+.reg-form {
+  margin-top: 30px;
+
+  @media (min-width: $tablet) {
+    margin-top: 40px;
+  }
+  @media (min-width: $desktop) {
+    margin-top: 56px;
+  }
+}
+
+.reg-form__label {
+  color: $inverse-text-color;
+  font-weight: 600;
+  line-height: 17px;
+  letter-spacing: 0.08em;
+  display: block;
+  position: relative;
+  width: 100%;
+  height: 48px;
+  margin-left: auto;
+  margin-right: auto;
+
+  &:nth-child(2) {
+    margin-top: 30px;
+    @media (min-width: $desktop) {
+      margin-top: 40px;
+    }
+  }
+
+  @media (min-width: $mobile-min) {
+    width: 280px;
+  }
+
+  @media (min-width: $tablet) {
+    width: 390px;
+  }
+  @media (min-width: $desktop) {
+    width: 478px;
+    height: 70px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.reg-form__input {
+  color: $inverse-text-color;
+  background-color: inherit;
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  padding-left: 25px;
+  border: 1px solid $inverse-text-color;
+  &:invalid {
+    border-color: red;
+  }
+  outline: none;
+}
+
+.reg-form__button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 48px;
+  width: 260px;
+  margin-top: 50px;
+  border: 2px solid $accent-color;
+  padding: 0px;
+  background-color: $accent-color;
+  color: $inverse-text-color;
+
+  font-weight: bold;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  outline-color: $inverse-text-color;
+
+  transition: background-color 250ms $timing-function, color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $accent-color;
+  }
+
+  @media (min-width: $desktop) {
+    width: 354px;
+    height: 70px;
+    font-size: 14px;
+    letter-spacing: 0.14em;
+  }
+  @media (min-width: $tablet) {
+    margin-top: 31px;
+  }
+  @media (min-width: $desktop) {
+    margin-top: 80px;
+  }
+}
+
+.reg-form__title {
+  position: absolute;
+  left: 25px;
+  top: 15px;
+  transform: translateY(0%);
+  transition: transform 250ms $timing-function;
+
+  @media (min-width: $desktop) {
+    top: 23px;
+  }
+
+  .reg-form__input:focus + &,
+  .reg-form__input:hover + &,
+  .reg-form__input:not(:placeholder-shown) + & {
+    transform: translateY(-230%);
+  }
+}
+
+.br {
+  @media (max-width: 767px) {
+    display: none;
+  }
+}
