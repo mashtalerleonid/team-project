@@ -1,34 +1,3 @@
-.home__link {
-  @extend %link;
-
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 40px;
-  height: 40px;
-  padding: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: $accent-color;
-  background-color: transparent;
-  border: 2px solid $accent-color;
-  opacity: 0.5;
-
-  transition: color 250ms $timing-function, background-color 250ms $timing-function,
-    opacity 250ms $timing-function;
-
-  &:hover {
-    opacity: 1;
-    background-color: $accent-color;
-    color: $inverse-text-color;
-  }
-}
-
-.home__icon {
-  fill: currentColor;
-}
-
 .program {
   counter-reset: semestr;
 
