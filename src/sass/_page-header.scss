@@ -124,6 +124,7 @@
 
 .consultation-button {
   height: 48px;
+  margin-right: 61px;
   border: 2px solid $accent-color;
   background-color: transparent;
   padding: 0px 11px;
@@ -149,6 +150,10 @@
     display: none;
   }
 
+  @media screen and (max-width: 1349px) {
+    
+  }
+
   @media screen and (min-width: $desktop) {
     font-size: 14px;
     line-height: 17px;
@@ -159,12 +164,20 @@
 }
 
 .menu-toggle {
+  position: fixed; 
+  top: 34px;
+  right: 45px;
   margin-left: 40px;
-  border: none;
-  padding: 0;
+  background-color: $inverse-text-color;
+  border: 1px solid $inverse-text-color;
+  border-radius: 4px;  
   display: flex;
-  
-  background-color: transparent;
+  z-index: 999;  
+
+  @media screen and (min-width: $tablet) {
+    top: 51px;
+    right: 40px;
+  }
 
   @media screen and (min-width: $desktop) {
     display: none;
@@ -173,7 +186,12 @@
 
 .menu-toggle__icon {
   width: 21px;
-  height: 21px;  
+  height: 21px;
+  padding-top: 3px;   
+}
+
+.header__icon-menu {
+  fill: $primary-text-color; 
 }
 
 // Мобильное меню
@@ -204,8 +222,8 @@
   padding-right: 20px;
   background-color: $modal-background-color;
   z-index: 999;
-
-  transform: translateY(-100%);
+  transform: translate(-100%, -100%);
+  transition: transform 250ms $timing-function;
 
   @media screen and (min-width: $tablet) {
     padding-top: 48px;
@@ -219,7 +237,7 @@
 }
 
 .menu-container.is-open {
-  transform: translateY(0);
+  transform: translate(0, 0);
 }
 
 .logo--inverse,
