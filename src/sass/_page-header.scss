@@ -39,7 +39,7 @@
   width: 80px;
   font-weight: 800;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0.04em;
   color: $primary-text-color;
   text-decoration: none;
@@ -47,7 +47,7 @@
   @media screen and (min-width: $tablet) {
     width: 130px;
     font-size: 26px;
-    line-height: 32px;
+    line-height: 1.23;
     letter-spacing: 0.04em;
   }
 }
@@ -71,7 +71,7 @@
   display: block;
   font-weight: bold;
   font-size: 5px;
-  line-height: 10px;
+  line-height: 2;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: $primary-text-color;
@@ -95,7 +95,7 @@
   list-style: none;
   font-weight: bold;
   font-size: 14px;
-  line-height: 17px;
+  line-height: 1.21;
   text-transform: uppercase;
 
   @media screen and (max-width: 1343px) {
@@ -131,7 +131,7 @@
   display: flex;
   font-weight: bold;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.25;
   align-items: center;
   text-align: center;
   letter-spacing: 0.08em;
@@ -156,7 +156,7 @@
 
   @media screen and (min-width: $desktop) {
     font-size: 14px;
-    line-height: 17px;
+    line-height: 1.21;
     letter-spacing: 0.14em;
     height: 70px;
     padding: 0px 14px;
@@ -165,17 +165,21 @@
 
 .menu-toggle {
   position: fixed; 
-  top: 34px;
-  right: 45px;
+  width: 30px;
+  height: 30px;
+  top: 31px;
+  right: 20px;
   margin-left: 40px;
   background-color: $inverse-text-color;
   border: 1px solid $inverse-text-color;
   border-radius: 4px;  
   display: flex;
+  justify-content: center;
+  align-items: center;
   z-index: 999;  
 
   @media screen and (min-width: $tablet) {
-    top: 51px;
+    top: 49px;
     right: 40px;
   }
 
@@ -189,17 +193,6 @@
   height: 21px;
   padding-top: 3px;   
 }
-
-// .header__icon-menu {
-//   fill: $primary-text-color; 
-// }
-
-// .header__icon-cross {
-//   width: 21px;
-//   height: 21px;
-//   fill: $primary-text-color; 
-// }
-
 
 // Мобильное меню
 
@@ -277,7 +270,7 @@
   list-style: none;
   font-weight: 800;
   font-size: 20px;
-  line-height: 180%;
+  line-height: 1.8;
   letter-spacing: 0.03em;
   color: $inverse-text-color;
 
@@ -318,4 +311,6 @@
 
 .menu-toggle.is-open {
   z-index: 2000;
+  background-color: transparent;
+  border: none;
 }
