@@ -174,11 +174,13 @@
     line-height: 1.67;
     text-decoration-line: underline;
     color: $accent-color;
-    transition: color 250ms $timing-function; 
+    transition: color 250ms $timing-function,
+    text-decoration 250ms $timing-function; 
     
     &:hover,
     &:focus {
         color: rgb(233, 93, 0);
+        text-decoration-line: none;
     }
 
     @media screen and (min-width: $desktop) {
