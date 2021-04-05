@@ -40,10 +40,14 @@
 }
 
 .instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 10px;
   margin: 31px 0px 30px 0px;
-}
 
-.instagram__logo {
   background: radial-gradient(
     110.28% 110.28% at 20.5% 87.39%,
     #fae100 0%,
@@ -55,4 +59,10 @@
     #ff1c74 49.22%,
     #6c1cd1 100%
   );
+}
+
+.instagram__logo {
+  max-width: 25px;
+  max-height: 25px;
+  fill: $inverse-text-color;
 }

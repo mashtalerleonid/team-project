@@ -77,6 +77,10 @@
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.01em;
+
+  @media screen and (min-width: $desktop) {
+    font-size: 20px;
+  }
 }
 
 .form-modal__caption {
@@ -92,6 +96,9 @@
   position: relative;
   display: block;
   margin-bottom: 25px;
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 40px;
+  }
 }
 
 .form-modal__label {
@@ -102,6 +109,7 @@
   transition: transform 250ms $timing-function;
 
   @media screen and (min-width: $desktop) {
+    top: 13px;
     left: 40px;
   }
 }
@@ -156,23 +164,31 @@
 }
 
 .form-modal__field:focus-within > .form-modal__label,
+.form-modal__field:hover > .form-modal__label,
 .form-modal__input:not(:placeholder-shown) + .form-modal__label,
 .form-modal__textarea:not(:placeholder-shown) + .form-modal__label {
   transform: translateY(-37px);
+
+  @media screen and (min-width: $desktop) {
+    transform: translateY(-45px);
+  }
 }
 
 .form-modal__btn {
   display: inline-flex;
   padding: 10px 32px;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.88;
   text-align: center;
   letter-spacing: 0.06em;
   text-decoration: none;
+  text-transform: uppercase;
   background-color: $accent-color;
   color: $inverse-text-color;
-  border: 0;
+  border: 2px solid $accent-color;
+
+  transition: background-color 250ms $timing-function, color 250ms $timing-function;
 
   &:hover {
     cursor: pointer;
@@ -183,6 +199,7 @@
 
   &:hover,
   &:focus {
-    background-color: #ff5709;
+    background-color: $inverse-text-color;
+    color: $accent-color;
   }
 }

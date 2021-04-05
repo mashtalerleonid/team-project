@@ -1,17 +1,18 @@
 (() => {
   const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
   const closeMenuLinkProgram = document.querySelector('.js-close-menu-link-program');
   const closeMenuLinkAbout = document.querySelector('.js-close-menu-link-about');
   const closeMenuLinkTraining = document.querySelector('.js-close-menu-link-training');
   const closeMenuLinkContacts = document.querySelector('.js-close-menu-link-contacts');
-  
+  const menuBtnRef = document.querySelector("[data-menu-button]");
+  const consultationButton = document.querySelector('.consultation-button__mob-menu');
+
   const toggleMenu = () => {
     const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
+      menuBtnRef.getAttribute("aria-expanded") === "true" || false;
+      menuBtnRef.setAttribute('aria-expanded', !isMenuOpen);
+      menuBtnRef.classList.toggle("is-open");
+      mobileMenu.classList.toggle('is-open');
 
     const scrollLockMethod = !isMenuOpen
       ? 'disableBodyScroll'
@@ -19,12 +20,12 @@
     bodyScrollLock[scrollLockMethod](document.body);
   };
 
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
   closeMenuLinkProgram.addEventListener('click', toggleMenu);
   closeMenuLinkAbout.addEventListener('click', toggleMenu);
   closeMenuLinkTraining.addEventListener('click', toggleMenu);
   closeMenuLinkContacts.addEventListener('click', toggleMenu);
+  menuBtnRef.addEventListener('click', toggleMenu);
+  consultationButton.addEventListener('click', toggleMenu);
   
   // Закрываем мобильное меню на более широких экранах
   // в случае изменения ориентации устройства.
