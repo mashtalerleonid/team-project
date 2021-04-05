@@ -150,7 +150,7 @@
   height: 48px;
   width: 260px;
   margin-top: 50px;
-  border: none;
+  border: 2px solid $accent-color;
   padding: 0px;
   background-color: $accent-color;
   color: $inverse-text-color;
@@ -160,6 +160,14 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
   outline-color: $inverse-text-color;
+
+  transition: background-color 250ms $timing-function, color 250ms $timing-function;
+
+  &:hover,
+  &:focus {
+    background-color: transparent;
+    color: $accent-color;
+  }
 
   @media (min-width: $desktop) {
     width: 354px;
