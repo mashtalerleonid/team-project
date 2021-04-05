@@ -27,7 +27,7 @@
   height: inherit;
 }
 
-.header__logo {
+.main__logo {
   border: none;
 
   @media screen and (min-width: $tablet) {
@@ -59,7 +59,7 @@
   }
 }
 
-.header__icon {
+.main__icon {
   width: 14px;
   height: 20px;
   margin-left: 2px;
@@ -74,7 +74,7 @@
   }
 }
 
-.header__logo-rus {
+.main__logo-rus {
   display: block;
   font-weight: bold;
   font-size: 5px;
@@ -89,7 +89,7 @@
   }
 }
 
-.header__logo-black {
+.main__logo-black {
   color: $primary-text-color;
 }
 
@@ -214,8 +214,8 @@
 }
 
 .logo--inverse,
-.header__logo-black--inverse,
-.header__logo-rus--inverse,
+.main__logo-black--inverse,
+.main__logo-rus--inverse,
 .header__chapters-item--inverse {
   color: $inverse-text-color;
 }
