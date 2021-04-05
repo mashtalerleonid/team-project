@@ -114,16 +114,15 @@
 
     &::after {
         content: '';
-        display: block;
-        max-width: 401px;
+        display: block;        
         height: 1px;
         margin-top: 10px;
         background-color: $secondary-text-color;
 
-        @media screen and (min-width: $tablet) {
-            width: 401px;
+        @media screen and (max-width: 767px) {
+            max-width: 401px;
         }
-        
+                
         @media screen and (min-width: $desktop) {
             width: 640px;
         }
