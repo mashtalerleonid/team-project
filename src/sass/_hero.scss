@@ -123,6 +123,7 @@
     border: 2px solid $accent-color;
     background-color: #fff;
     color: $accent-color;
+    transition: color 250ms $timing-function, background-color 250ms $timing-function;
   }
 }
 
