@@ -115,3 +115,21 @@
   max-height: 25px;
   fill: $inverse-text-color;
 }
+
+.footer-contacts {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: $desktop) {
+    flex-grow: 1.4;
+  }
+}
+
+.footer-contacts__item {
+  list-style: none;
+}
