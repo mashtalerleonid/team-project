@@ -1,13 +1,9 @@
-.hero {
-  padding-top: 50px;
-}
-
 .hero__shadow {
   padding-bottom: 77px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: left 0px bottom 0px;
   background-image: url(../images/hero/gradient-table.png);
+  background-position: left -64px bottom 0px;
 
   @media screen and(min-width:$tablet) {
     background-position: left 0px bottom 0px;
@@ -155,11 +151,26 @@
   top: 0px;
   left: 20px;
 
+  object-position: 67% 50%;
+  animation-name: im1-an;
+  animation-duration: 4000ms;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
   &--opacity {
     position: absolute;
     width: 208px;
     top: 10px;
     left: 0px;
+
+    object-position: 50% 32%;
+    opacity: 0;
+    animation-name: im2-an;
+    animation-duration: 4000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
   }
 
   @media screen and(min-width:$tablet) {
@@ -190,5 +201,41 @@
       right: 0px;
       left: auto;
     }
+  }
+}
+
+@keyframes im1-an {
+  0% {
+    opacity: 1;
+  }
+  30% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  70% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes im2-an {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
   }
 }
