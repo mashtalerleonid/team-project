@@ -1,192 +1,197 @@
 .about {
+  padding-top: 40px;
+
+  @media screen and (min-width: $tablet) {
+    padding-top: 50px;
+  }
+
+  @media screen and (min-width: $desktop) {
     padding-top: 130px;
-    padding-bottom: 80px;
+  }
 }
 
 .teacher {
-    @media screen and (min-width: $tablet) {
-        display: flex;
-        align-items: flex-start;
-    }    
+  @media screen and (min-width: $tablet) {
+    display: flex;
+    align-items: flex-start;
+  }
 }
 
 .about__title {
-    margin-top: 0px;
-    margin-bottom: 20px;
-    font-family: Montserrat;
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.3;       
-    letter-spacing: 0.03em;    
-    color: $primary-text-color;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 0.03em;
+  color: $primary-text-color;
 
-    @media screen and (min-width: $tablet) {
-        font-size: 26px;        
-    }
+  @media screen and (min-width: $tablet) {
+    font-size: 26px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        font-size: 46px;
-    }
+  @media screen and (min-width: $desktop) {
+    font-size: 46px;
+  }
 }
 
 .teacher__text-block {
-    max-width: 415px;
+  max-width: 415px;
 
-    @media screen and (min-width: $tablet) {
-        margin-left: 30px;
-    }
+  @media screen and (min-width: $tablet) {
+    margin-left: 30px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        max-width: 668px;
-    }
+  @media screen and (min-width: $desktop) {
+    max-width: 668px;
+  }
 }
 
 .teacher__check-mark {
-    max-width: 17.08px;
-    max-height: 14px;
+  max-width: 17.08px;
+  max-height: 14px;
 
-    @media screen and (min-width: $desktop) {
-        width: 24.41px;
-        height: 20px;
-    }
+  @media screen and (min-width: $desktop) {
+    width: 24.41px;
+    height: 20px;
   }
-  
+}
+
 .teacher__skills {
-    margin: 0;
-    padding: 0;
-    // list-style: none;
+  margin: 0;
+  padding: 0;
+  // list-style: none;
 
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 1.21;
-    letter-spacing: 0.06em;
-    color: $primary-text-color;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+  letter-spacing: 0.06em;
+  color: $primary-text-color;
 
-    @media screen and (min-width: $desktop) {
-        font-size: 16px;
-        line-height: 1.25;        
-    }   
+  @media screen and (min-width: $desktop) {
+    font-size: 16px;
+    line-height: 1.25;
   }
+}
 
 .teacher__skills-item {
-    display: inline-flex;
-    margin-bottom: 17px;
-    
-    @media screen and (min-width: $tablet) {
-        margin-bottom: 30px;
-    }
+  display: inline-flex;
+  margin-bottom: 17px;
+
+  @media screen and (min-width: $tablet) {
+    margin-bottom: 30px;
+  }
 }
 
 .teacher__skills-item-text {
-    display: block;
-    margin-left: 8.92px;
+  display: block;
+  margin-left: 8.92px;
 
-    @media screen and (min-width: $tablet) {
-        width: 375px;
-    }
+  @media screen and (min-width: $tablet) {
+    width: 375px;
+  }
 
-    @media screen and (min-width: $desktop) {
-        width: 530px;
-        margin-left: 34.59px;
-    }
+  @media screen and (min-width: $desktop) {
+    width: 530px;
+    margin-left: 34.59px;
+  }
 }
 
 .teacher__card-thumb {
-    width: 243px;
-    height: 305.85px;
-  
-    @media screen and (min-width: $desktop) {
-        width: 530px;
-        height: 667px;
-    }
+  width: 243px;
+  height: 305.85px;
+
+  @media screen and (min-width: $desktop) {
+    width: 530px;
+    height: 667px;
   }
+}
 
 .teacher__photo {
-    width: inherit;
+  width: inherit;
 }
 
 .teacher__name {
-    margin-top: 20px; 
-    font-weight: 800;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: 0.08em;
-    color: $primary-text-color;
+  margin-top: 20px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.08em;
+  color: $primary-text-color;
 
-    &::after {
-        content: '';
-        display: block;        
-        height: 1px;
-        margin-top: 10px;
-        background-color: $secondary-text-color;
+  &::after {
+    content: '';
+    display: block;
+    height: 1px;
+    margin-top: 10px;
+    background-color: $secondary-text-color;
 
-        @media screen and (max-width: 767px) {
-            max-width: 401px;
-        }
-                
-        @media screen and (min-width: $desktop) {
-            width: 640px;
-        }
-    }
-
-    @media screen and (min-width: $tablet) {
-        margin-top: 0px;
+    @media screen and (max-width: 767px) {
+      max-width: 401px;
     }
 
     @media screen and (min-width: $desktop) {
-        font-size: 30px;
-        line-height: 1.23;
+      width: 640px;
     }
+  }
+
+  @media screen and (min-width: $tablet) {
+    margin-top: 0px;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 30px;
+    line-height: 1.23;
+  }
 }
 
 .teacher__info {
-    margin-top: 0px;
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;
-    color: $secondary-text-color;
+  margin-top: 0px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  color: $secondary-text-color;
 
-    &--pseudo::before {
-        content: '';
-        display: block;
-        width: 20px;
-        height: 2px;
-        margin-bottom: 19px;
-        background-color: $accent-color;
-    }
+  &--pseudo::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    margin-bottom: 19px;
+    background-color: $accent-color;
+  }
 
-    &:not(:last-child) {
-        margin-bottom: 17px;
-
-        @media screen and (min-width: $desktop) {
-            margin-bottom: 23px;
-        }
-    }
+  &:not(:last-child) {
+    margin-bottom: 17px;
 
     @media screen and (min-width: $desktop) {
-        font-size: 18px;
-        line-height: 1.56;
+      margin-bottom: 23px;
     }
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
 
 .certificate {
-    font-weight: 500;
-    font-size: 12px;
-    line-height: 1.67;
-    text-decoration-line: underline;
-    color: $accent-color;
-    transition: color 250ms $timing-function,
-    text-decoration 250ms $timing-function; 
-    
-    &:hover,
-    &:focus {
-        color: rgb(233, 93, 0);
-        text-decoration-line: none;
-    }
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.67;
+  text-decoration-line: underline;
+  color: $accent-color;
+  transition: color 250ms $timing-function, text-decoration 250ms $timing-function;
 
-    @media screen and (min-width: $desktop) {
-        font-size: 18px;
-        line-height: 1.56;
-    }    
+  &:hover,
+  &:focus {
+    color: rgb(233, 93, 0);
+    text-decoration-line: none;
+  }
+
+  @media screen and (min-width: $desktop) {
+    font-size: 18px;
+    line-height: 1.56;
+  }
 }
-

@@ -19,7 +19,7 @@
 
   font-weight: 800;
   font-size: 20px;
-  line-height: 136%;
+  line-height: 1, 36;
   letter-spacing: 0.03em;
   color: $inverse-text-color;
 
@@ -82,7 +82,7 @@
 .benefits__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 
   &::before {
     content: '— ' counter(items, decimal-leading-zero);
@@ -91,7 +91,7 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 164.9%;
+    line-height: 1, 65;
     color: $accent-color;
   }
 
