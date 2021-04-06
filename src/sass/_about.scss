@@ -1,13 +1,14 @@
+.about {
+    padding-top: 130px;
+    padding-bottom: 80px;
+}
+
 .teacher {
     @media screen and (min-width: $tablet) {
         display: flex;
         align-items: flex-start;
     }    
 }
-
-.about__container {
-    margin-top: 35px;
-  }
 
 .about__title {
     margin-top: 0px;
