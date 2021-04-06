@@ -20,7 +20,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    min-height: 710px;
+    min-height: 650px;
 
     background-image: url(../images/bg_problems.svg),
       linear-gradient(to bottom, $dark-background-color 560px, $inverse-text-color 150px);
@@ -85,7 +85,7 @@
 .problems__item {
   display: flex;
   flex-direction: column;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
 
   &::before {
     content: '— ' counter(items, decimal-leading-zero);
