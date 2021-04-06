@@ -141,6 +141,7 @@
   @media screen and (min-width: $tablet) {
     display: flex;
     padding-left: 50px;
+    padding-bottom: 42px;
   }
 
   @media screen and (min-width: $desktop) {
@@ -181,6 +182,7 @@
     @media screen and (min-width: $tablet) {
       margin-right: 50px;
       width: 176px;
+      margin-bottom: 0;
     }
 
     @media screen and (min-width: $desktop) {
