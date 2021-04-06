@@ -82,7 +82,7 @@
 .benefits__item {
   display: flex;
   flex-direction: column;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
 
   &::before {
     content: '— ' counter(items, decimal-leading-zero);

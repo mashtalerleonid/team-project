@@ -49,10 +49,6 @@
   color: $dark-background-color;
   text-decoration: none;
 
-  @media (max-width: 767px) {
-    margin-top: 21px;
-  }
-
   @media (min-width: $tablet) {
     font-size: 20px;
     height: 40px;
@@ -88,10 +84,6 @@
   height: 40px;
   width: 40px;
   border-radius: 10px;
-
-  @media (max-width: 767px) {
-    margin-top: 31px;
-  }
 
   @media (min-width: $tablet) {
     margin-left: 24px;
@@ -132,4 +124,16 @@
 
 .footer-contacts__item {
   list-style: none;
+
+  &:first-child {
+    @media (max-width: 767px) {
+      margin-top: 21px;
+    }
+  }
+
+  &:not(first-child) {
+    @media (max-width: 767px) {
+      margin-top: 31px;
+    }
+  }
 }
