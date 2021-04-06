@@ -1,29 +1,54 @@
 <section class="contacts" id="contacts">
-    <div class="container">
+  <div class="container">
+    <h2 class="contacts__title">
+      Регистрация на <span class="contacts__title--accent">бесплатную</span> телефонную
+      <span class="contacts__title--accent">консультацию</span> по нюансам ЗНО по английскому языку
+    </h2>
 
-        <h2 class="contacts__title">Регистрация на <span class="contacts__title--accent">бесплатную</span> телефонную
-            <span class="contacts__title--accent">консультацию</span> по нюансам ЗНО
-            по английскому языку
-        </h2>
+    <p class="contacts__text">
+      Оставь заявку на участие в <span class="contacts__text--accent">бесплатном занятии.</span>
+      <br class="br" />
+      С вами свяжется консультант и ответит на вопросы
+    </p>
 
-        <p class="contacts__text">Оставь заявку на участие в <span class="contacts__text--accent">бесплатном
-                занятии.</span> <br class="br">
-            С вами свяжется консультант и ответит на вопросы</p>
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="if(submitted) {window.location='http://%MY_PAGE%';}"
+    ></iframe>
 
-        <form class="reg-form" name="registration-form" autocomplete="on">
+    <form
+      class="reg-form"
+      name="registration-form"
+      autocomplete="on"
+      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSfD9lMxSJhYis_x58NtzypxpmcIJea9vAVD8KccfWHB6HKORQ/formResponse"
+      target="hidden_iframe"
+      onsubmit="submitted=true;"
+    >
+      <label class="reg-form__label">
+        <input
+          class="reg-form__input"
+          type="text"
+          name="entry.2036582780"
+          placeholder=" "
+          minlength="2"
+        />
+        <span class="reg-form__title">Имя*</span>
+      </label>
 
-            <label class="reg-form__label">
-                <input class="reg-form__input" type="text" name="name" placeholder=" " minlength="2">
-                <span class="reg-form__title">Имя*</span>
-            </label>
+      <label class="reg-form__label">
+        <input
+          class="reg-form__input"
+          type="tel"
+          name="entry.583891832"
+          placeholder=" "
+          pattern="[0-9]{9,12}"
+        />
+        <span class="reg-form__title">Телефон*</span>
+      </label>
 
-            <label class="reg-form__label">
-                <input class="reg-form__input" type="tel" name="tel" placeholder=" " pattern="[0-9]{9,12}">
-                <span class="reg-form__title">Телефон*</span>
-            </label>
-
-            <button class="reg-form__button" type="submit">хочу на бесплатное занятие</button>
-
-        </form>
-    </div>
+      <button class="reg-form__button" type="submit">хочу на бесплатное занятие</button>
+    </form>
+  </div>
 </section>

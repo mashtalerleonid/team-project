@@ -5,20 +5,43 @@
         <use href="./images/sprite.svg#close"></use>
       </svg>
     </button>
-    <form class="form-modal">
+    <iframe
+      name="hidden_iframe"
+      id="hidden_iframe"
+      style="display: none"
+      onload="if(submitted) {window.location='http://%MY_PAGE%';}"
+    ></iframe>
+    <form
+      class="form-modal"
+      action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSe5TP6D2f9cp6gRldxYnlKIdPkMhEPgGg5p1Km5FFxXnmRUgg/formResponse"
+      target="hidden_iframe"
+      onsubmit="submitted=true;"
+    >
       <b class="form-modal__caption">Оставьте свои данные, мы вам перезвоним</b>
       <label class="form-modal__field" for="user-name">
-        <input class="form-modal__input" type="text" name="name" id="user-name" placeholder=" " />
+        <input
+          class="form-modal__input"
+          type="text"
+          name="entry.52222065"
+          id="user-name"
+          placeholder=" "
+        />
         <span class="form-modal__label">Имя</span>
       </label>
       <label class="form-modal__field" for="user-tel">
-        <input class="form-modal__input" type="tel" name="tel" id="user-tel" placeholder=" " />
+        <input
+          class="form-modal__input"
+          type="tel"
+          name="entry.270979759"
+          id="user-tel"
+          placeholder=" "
+        />
         <span class="form-modal__label">Телефон</span></label
       >
       <label class="form-modal__field" for="user-comment">
         <textarea
           class="form-modal__textarea"
-          name="comment"
+          name="entry.918443874"
           id="user-comment"
           rows="8"
           placeholder=" "
