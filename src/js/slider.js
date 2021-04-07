@@ -2,22 +2,12 @@ $('.slider-single').slick({
   slidesToShow: 1,
   slidesToScroll: 1,
   arrows: true,
-  // arrows: false,
-
   fade: false,
-  adaptiveHeight: true,
+  // adaptiveHeight: true,
   infinite: false,
   useTransform: true,
   speed: 400,
   cssEase: 'cubic-bezier(0.77, 0, 0.18, 1)',
-  responsive: [
-    {
-      breakpoint: 768,
-      settings: {
-        // arrows: false,
-      },
-    },
-  ],
 });
 
 $('.slider-nav')
@@ -26,19 +16,21 @@ $('.slider-nav')
   })
   .slick({
     slidesToShow: 7,
-    slidesToScroll: 3,
+    slidesToScroll: 7,
     dots: false,
     focusOnSelect: false,
     infinite: false,
     arrows: false,
-    centerMode: true,
+<<<<<<< Updated upstream
+=======
+    // centerMode: true,
+>>>>>>> Stashed changes
     responsive: [
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 5,
           slidesToScroll: 5,
-          // arrows: true,
         },
       },
       {
@@ -46,7 +38,6 @@ $('.slider-nav')
         settings: {
           slidesToShow: 4,
           slidesToScroll: 4,
-          // arrows: true,
         },
       },
       {
@@ -54,7 +45,6 @@ $('.slider-nav')
         settings: {
           slidesToShow: 3,
           slidesToScroll: 3,
-          // arrows: true,
         },
       },
     ],
@@ -73,66 +63,6 @@ $('.slider-nav').on('click', '.slick-slide', function (event) {
 
   $('.slider-single').slick('slickGoTo', goToSingleSlide);
 });
-
-// const windowInnerWidth = window.innerWidth;
-// if (windowInnerWidth > 768) {
-//   $(document).ready(function () {
-//     $('.slider-for').slick({
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       arrows: true,
-//       fade: true,
-//       asNavFor: '.slider-nav',
-//     });
-//     $('.slider-nav').slick({
-//       slidesToShow: 5,
-//       slidesToScroll: 1,
-//       asNavFor: '.slider-for',
-//       dots: false,
-//       arrows: false,
-//       centerMode: true,
-//       focusOnSelect: true,
-//     });
-//   });
-// } else if (windowInnerWidth < 380) {
-//   $(document).ready(function () {
-//     $('.slider-for').slick({
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       arrows: false,
-//       fade: true,
-//       asNavFor: '.slider-nav',
-//     });
-//     $('.slider-nav').slick({
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       asNavFor: '.slider-for',
-//       arrows: true,
-//       dots: false,
-//       centerMode: true,
-//       focusOnSelect: true,
-//     });
-//   });
-// } else {
-//   $(document).ready(function () {
-//     $('.slider-for').slick({
-//       slidesToShow: 1,
-//       slidesToScroll: 1,
-//       arrows: false,
-//       fade: true,
-//       asNavFor: '.slider-nav',
-//     });
-//     $('.slider-nav').slick({
-//       slidesToShow: 3,
-//       slidesToScroll: 1,
-//       asNavFor: '.slider-for',
-//       arrows: true,
-//       dots: false,
-//       centerMode: true,
-//       focusOnSelect: true,
-//     });
-//   });
-// }
 
 const checkbox1 = document.querySelector('#post-1');
 const checkbox2 = document.querySelector('#post-2');
