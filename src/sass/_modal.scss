@@ -120,6 +120,10 @@
   padding: 10px 25px;
   border: 1px solid $secondary-text-color;
 
+  &:invalid {
+    border-color: red;
+  }
+
   &:hover,
   &:focus {
     border: 1px solid $accent-color;
