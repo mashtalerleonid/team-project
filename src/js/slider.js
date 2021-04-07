@@ -21,10 +21,6 @@ $('.slider-nav')
     focusOnSelect: false,
     infinite: false,
     arrows: false,
-<<<<<<< Updated upstream
-=======
-    // centerMode: true,
->>>>>>> Stashed changes
     responsive: [
       {
         breakpoint: 768,
