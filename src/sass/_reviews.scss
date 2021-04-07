@@ -185,12 +185,72 @@
     font-size: 18px;
   }
 }
+// ----------------------
+.js .slider-single > div:nth-child(1n + 2) {
+  display: none;
+}
 
-.slick-center .reviews__thumb {
+.js .slider-single.slick-initialized > div:nth-child(1n + 2) {
+  display: block;
+}
+
+// h3 {
+//   background: #f0f0f0;
+//   color: #3498db;
+//   font-size: 2.25rem;
+//   margin: 0.5rem;
+//   padding: 2%;
+//   position: relative;
+//   text-align: center;
+// }
+
+// .slider-single h3 {
+//   line-height: 10rem;
+// }
+
+// .slider-nav h3::before {
+//   content: '';
+//   display: block;
+//   padding-top: 75%;
+// }
+
+.slider-nav h3 .reviews__thumb--slide-nav {
+  position: absolute;
+  width: 54px;
+  height: 54px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  background-color: yellow;
+}
+// .slider-nav h3 {
+//   position: absolute;
+//   top: 50%;
+//   left: 50%;
+//   transform: translate(-50%, -50%);
+//   width: 54px;
+
+//   height: 54px;
+// }
+// reviews__thumb
+.slider-nav .slick-slide {
+  cursor: pointer;
+}
+
+.slick-slide.is-active .reviews__thumb {
   border: 2px solid $accent-color;
 }
 
-.slider-for {
+// .slick-slide.is-active h3 {
+//   color: #c00;
+//   background-color: #fff;
+// }
+// .slick-center .reviews__thumb {
+//   border: 2px solid $accent-color;
+// }
+
+.slider-single {
   margin-bottom: 20px;
   box-shadow: -5px 8px 26px rgba(0, 0, 0, 0.04);
 }
@@ -203,10 +263,17 @@
     margin-right: 60px;
     margin-left: 60px;
   }
+  @media screen and (min-width: $desktop) {
+    margin-right: 260px;
+    margin-left: 260px;
+  }
 }
 
 .slick-next {
-  right: -45px;
+  // right: -45px;
+  right: 0;
+  bottom: -53px;
+  top: auto;
   width: 25px;
   height: 15px;
 
@@ -222,6 +289,8 @@
 
   @media screen and (min-width: $tablet) {
     right: -13px;
+    bottom: auto;
+    top: 50%;
   }
 
   @media screen and (min-width: $desktop) {
@@ -230,7 +299,10 @@
 }
 
 .slick-prev {
-  left: -45px;
+  // left: -45px;
+  left: 0;
+  bottom: -53px;
+  top: auto;
   width: 25px;
   height: 15px;
 
@@ -246,6 +318,8 @@
 
   @media screen and (min-width: $tablet) {
     left: -13px;
+    bottom: auto;
+    top: 50%;
   }
 
   @media screen and (min-width: $desktop) {
