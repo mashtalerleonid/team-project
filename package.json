@@ -3,10 +3,10 @@
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://kotikm81.github.io/codehunters-team-proj",
+  "homepage": "https://mashtalerleonid.github.io/team-project",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /codehunters-team-proj/"
+    "build": "parcel build src/*.html --public-url /team-project/"
   },
   "repository": {
     "type": "git",
